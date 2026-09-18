@@ -29,6 +29,13 @@ if exist "start_web_tunnel.bat" (
     echo   [+] Da mo Cloudflare Tunnel de lay link quan tri tu xa
 )
 
+:: 3. Tu dong bat Playit Game Tunnel (mo ket noi Minecraft va Micro ra ngoai internet)
+if exist "playitd.exe" (
+    start "Playit Game Tunnel" /min cmd /c "playitd.exe --secret-path playit.toml"
+    echo   [+] Da bat Playit Tunnel (expressing-actress.tun.ply.gg:23281)
+)
+
+
 echo ======================================================================
 echo   DANG KHOI DONG SERVER MINECRAFT...
 echo ======================================================================

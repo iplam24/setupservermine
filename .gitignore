@@ -9,11 +9,8 @@ crash-reports/
 .arclight/
 versions/
 
-# Playit secrets & credentials (BẢO MẬT: KHÔNG ĐƯỢC ĐẨY LÊN GITHUB)
+# Temporary folder
 playit/
-playit.toml
-playit.exe
-start_playit.bat
 
 # Backups
 backups/
