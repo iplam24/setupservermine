@@ -22,6 +22,8 @@ mods_disabled/
 
 # Temporary databases and locks
 *.db-journal
+*.db-wal
+*.db-shm
 *.lock
 session.lock
 world/**/session.lock

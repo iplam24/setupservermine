@@ -1,0 +1,13 @@
+{
+  "autoRestartEnabled": true,
+  "maintenanceTime": "04:00",
+  "maintenanceMode": false,
+  "clearLagEnabled": true,
+  "clearLagIntervalMinutes": 15,
+  "clearLagBroadcast": true,
+  "viewDistance": 10,
+  "simulationDistance": 8,
+  "hopperTransfer": 8,
+  "maxPlayers": 20,
+  "antiXray": true
+}
