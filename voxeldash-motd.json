@@ -1,0 +1,169 @@
+{
+  "lines" : [ {
+    "segments" : [ {
+      "text" : "---",
+      "color" : "dark_gray",
+      "bold" : false,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : true,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : " ",
+      "color" : null,
+      "bold" : false,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : "!|",
+      "color" : "white",
+      "bold" : false,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : true,
+      "hexColor" : false
+    }, {
+      "text" : " ",
+      "color" : null,
+      "bold" : false,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : "⚡ ",
+      "color" : "red",
+      "bold" : true,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : "TRÙM MINECRAFT ",
+      "color" : "gold",
+      "bold" : true,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : "⚡ ",
+      "color" : "red",
+      "bold" : true,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : "|!",
+      "color" : "white",
+      "bold" : false,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : true,
+      "hexColor" : false
+    }, {
+      "text" : " ",
+      "color" : null,
+      "bold" : false,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : "---",
+      "color" : "dark_gray",
+      "bold" : false,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : true,
+      "obfuscated" : false,
+      "hexColor" : false
+    } ]
+  }, {
+    "segments" : [ {
+      "text" : "» ",
+      "color" : "green",
+      "bold" : true,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : "SERVER CỦA NHỮNG NGƯỜI ",
+      "color" : "aqua",
+      "bold" : true,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : "• ",
+      "color" : "white",
+      "bold" : false,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : " GẦY ",
+      "color" : "yellow",
+      "bold" : true,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : "« ",
+      "color" : "green",
+      "bold" : true,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : "[",
+      "color" : "gray",
+      "bold" : false,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : "1.21.1",
+      "color" : "light_purple",
+      "bold" : true,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    }, {
+      "text" : "]",
+      "color" : "gray",
+      "bold" : false,
+      "italic" : false,
+      "underlined" : false,
+      "strikethrough" : false,
+      "obfuscated" : false,
+      "hexColor" : false
+    } ]
+  } ]
+}

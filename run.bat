@@ -1,4 +1,4 @@
-@echo off
+﻿@echo off
 title Arclight Fabric Server [1.21.1]
 chcp 65001 > nul
 cd /d "%~dp0"
@@ -8,9 +8,29 @@ set RAM_MIN=4G
 set RAM_MAX=6G
 
 echo ======================================================================
-echo   DANG KHOI DONG MINECRAFT ARCLIGHT FABRIC SERVER (1.21.1)
+echo   ⚡ TRÙM MINECRAFT (1.21.1) - KHOI DONG HE THONG ALL-IN-ONE
+echo ======================================================================
 echo   RAM cap phat: %RAM_MIN% - %RAM_MAX%
-echo   Che do toi uu: G1GC Aikar + Paper Async Chunks + Krypton Multi-thread
+echo   Dang tu dong khoi chay Web Admin Hub & Tunnel...
+echo ======================================================================
+
+:: 1. Tu dong bat Web Admin Hub (Port 7868)
+where node >nul 2>nul
+if %errorlevel%==0 (
+    start "Admin Control Hub [Port 7868]" /min cmd /c "node web_admin_hub.js"
+    echo   [+] Da bat Hub Quan Tri: http://localhost:7868
+) else (
+    echo   [-] Khong tim thay Node.js. Hub Quan Tri chua the khoi dong.
+)
+
+:: 2. Tu dong bat Cloudflare Web Tunnel de lay link tu xa
+if exist "start_web_tunnel.bat" (
+    start "Cloudflare Web Tunnel (Remote Admin)" cmd /c "start_web_tunnel.bat"
+    echo   [+] Da mo Cloudflare Tunnel de lay link quan tri tu xa
+)
+
+echo ======================================================================
+echo   DANG KHOI DONG SERVER MINECRAFT...
 echo ======================================================================
 
 java -Xms%RAM_MIN% -Xmx%RAM_MAX% ^
@@ -37,5 +57,7 @@ java -Xms%RAM_MIN% -Xmx%RAM_MAX% ^
   -jar arclight.jar nogui
 
 echo.
-echo Server da dung lai. Nhan phim bat ky de thoat...
+echo ======================================================================
+echo   Server da dung lai. Nhan phim bat ky de thoat...
+echo ======================================================================
 pause > nul

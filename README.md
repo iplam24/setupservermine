@@ -24,9 +24,8 @@ Khi clone hoặc copy thư mục này sang bất kỳ máy tính/laptop/VPS nào
 3. **Playit.gg** (để mở tunnel cho bạn bè kết nối không cần mở port modem).
 
 ### 2. Các bước khởi động:
-1. Mở thư mục server:
-   * Nhấp đúp vào **`run.bat`** để chạy Minecraft Server.
-   * Nhấp đúp vào **`start_admin_hub.bat`** để chạy Hub Quản Trị & Tối Ưu Web (`http://localhost:7868`).
+1. Mở thư mục server, nhấp đúp duy nhất vào file **`run.bat`**:
+   * File sẽ tự động kích hoạt toàn bộ hệ thống: **Minecraft Server (Port 25565)**, **Web Admin Hub (Port 7868)**, và **Cloudflare Tunnel (cấp link quản lý từ xa qua internet)**.
 2. Cài đặt và bật ứng dụng **Playit.gg**:
    * Tạo tunnel Minecraft TCP (Port `25565`) cho game.
    * Tạo tunnel UDP (Port `24454`) cho Voice Chat (Micro).
