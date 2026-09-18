@@ -1,0 +1,246 @@
+﻿menu_title: '&8&l⚙ &c&lBẢNG ĐIỀU KHIỂN QUẢN TRỊ VIÊN'
+open_command:
+  - admin
+  - menu
+  - serverpanel
+size: 54
+items:
+  'border_glass':
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 17
+      - 18
+      - 26
+      - 27
+      - 35
+      - 36
+      - 44
+      - 45
+      - 46
+      - 47
+      - 48
+      - 50
+      - 51
+      - 52
+      - 53
+    display_name: ' '
+
+  'gm_creative':
+    material: GRASS_BLOCK
+    slot: 10
+    display_name: '&a&lChế Độ: Sáng Tạo'
+    lore:
+      - '&7Nhấp để chuyển sang Sáng Tạo (Creative)'
+    left_click_commands:
+      - '[player] gamemode creative'
+      - '[message] &a[Admin] Đã đổi sang chế độ Sáng Tạo!'
+
+  'gm_survival':
+    material: IRON_SWORD
+    slot: 11
+    display_name: '&c&lChế Độ: Sinh Tồn'
+    lore:
+      - '&7Nhấp để chuyển sang Sinh Tồn (Survival)'
+    left_click_commands:
+      - '[player] gamemode survival'
+      - '[message] &a[Admin] Đã đổi sang chế độ Sinh Tồn!'
+
+  'gm_spectator':
+    material: ENDER_EYE
+    slot: 12
+    display_name: '&b&lChế Độ: Khán Giả'
+    lore:
+      - '&7Nhấp để chuyển sang Khán Giả (Spectator)'
+    left_click_commands:
+      - '[player] gamemode spectator'
+      - '[message] &a[Admin] Đã đổi sang chế độ Khán Giả!'
+
+  'time_day':
+    material: SUNFLOWER
+    slot: 14
+    display_name: '&e&lThời Gian: Ban Ngày'
+    lore:
+      - '&7Đặt thời gian thế giới thành Buổi Sáng'
+    left_click_commands:
+      - '[console] time set day'
+      - '[message] &a[Admin] Đã chỉnh thời gian sang Ban Ngày!'
+
+  'time_night':
+    material: CLOCK
+    slot: 15
+    display_name: '&9&lThời Gian: Ban Đêm'
+    lore:
+      - '&7Đặt thời gian thế giới thành Buổi Tối'
+    left_click_commands:
+      - '[console] time set night'
+      - '[message] &a[Admin] Đã chỉnh thời gian sang Ban Đêm!'
+
+  'weather_clear':
+    material: WATER_BUCKET
+    slot: 16
+    display_name: '&f&lThời Tiết: Trời Trong'
+    lore:
+      - '&7Xóa tan mưa bão, trời quang mây tạnh'
+    left_click_commands:
+      - '[console] weather clear'
+      - '[message] &a[Admin] Đã xóa mưa bão!'
+
+  'diff_peaceful':
+    material: WHITE_WOOL
+    slot: 19
+    display_name: '&f&lĐộ Khó: Bình Yên (Peaceful)'
+    lore:
+      - '&7Không có quái vật xuất hiện'
+    left_click_commands:
+      - '[console] difficulty peaceful'
+      - '[message] &a[Admin] Đã đổi độ khó: Bình Yên!'
+
+  'diff_easy':
+    material: LIME_WOOL
+    slot: 20
+    display_name: '&a&lĐộ Khó: Dễ (Easy)'
+    lore:
+      - '&7Quái vật yếu, sát thương thấp'
+    left_click_commands:
+      - '[console] difficulty easy'
+      - '[message] &a[Admin] Đã đổi độ khó: Dễ!'
+
+  'diff_normal':
+    material: YELLOW_WOOL
+    slot: 21
+    display_name: '&e&lĐộ Khó: Bình Thường (Normal)'
+    lore:
+      - '&7Độ khó chuẩn của Minecraft'
+    left_click_commands:
+      - '[console] difficulty normal'
+      - '[message] &a[Admin] Đã đổi độ khó: Bình Thường!'
+
+  'diff_hard':
+    material: RED_WOOL
+    slot: 22
+    display_name: '&c&lĐộ Khó: Khó (Hard)'
+    lore:
+      - '&7Quái vật mạnh, đói có thể chết'
+    left_click_commands:
+      - '[console] difficulty hard'
+      - '[message] &a[Admin] Đã đổi độ khó: Khó!'
+
+  'power_fly':
+    material: FEATHER
+    slot: 24
+    display_name: '&f&lChế Độ Bay (Fly)'
+    lore:
+      - '&7Bật hoặc tắt khả năng bay lượn'
+    left_click_commands:
+      - '[player] fly'
+
+  'power_god':
+    material: GOLDEN_APPLE
+    slot: 25
+    display_name: '&6&lChế Độ Bất Tử (God Mode)'
+    lore:
+      - '&7Miễn nhiễm mọi sát thương trong game'
+    left_click_commands:
+      - '[player] god'
+
+  'power_heal':
+    material: POTION
+    slot: 28
+    display_name: '&d&lHồi Phục Toàn Diện'
+    lore:
+      - '&7Hồi đầy máu và thanh no tức thì'
+    left_click_commands:
+      - '[player] heal'
+      - '[player] feed'
+      - '[message] &a[Admin] Đã hồi đầy máu và thanh đói!'
+
+  'power_vanish':
+    material: PHANTOM_MEMBRANE
+    slot: 29
+    display_name: '&8&lTàng Hình Giám Sát (Vanish)'
+    lore:
+      - '&7Tàng hình hoàn toàn để theo dõi người chơi'
+    left_click_commands:
+      - '[player] vanish'
+
+  'spark_tps':
+    material: REDSTONE_TORCH
+    slot: 31
+    display_name: '&c&lKiểm Tra TPS & CPU Server'
+    lore:
+      - '&7Xem tốc độ xử lý thời gian thực và độ trễ'
+    left_click_commands:
+      - '[player] spark tps'
+
+  'spark_health':
+    material: EMERALD
+    slot: 32
+    display_name: '&a&lBáo Cáo Sức Khỏe Server (Health)'
+    lore:
+      - '&7Xem lượng RAM sử dụng và các thông số chi tiết'
+    left_click_commands:
+      - '[player] spark health'
+
+  'anticheat_grim':
+    material: NETHERITE_CHESTPLATE
+    slot: 37
+    display_name: '&4&l🛡️ HỆ THỐNG CHỐNG HACK (GrimAC)'
+    lore:
+      - '&7Trạng thái: &aĐANG BẢO VỆ 24/7'
+      - '&7Chặn tự động: &cFly, Speed, KillAura, Reach,'
+      - '&cNoClip, FastBreak, AutoClicker, BadPackets...'
+      - ' '
+      - '&eNhấp để Bật/Tắt thông báo hack (/grim alerts)'
+    left_click_commands:
+      - '[player] grim alerts'
+
+  'antixray_status':
+    material: DIAMOND_ORE
+    slot: 38
+    display_name: '&b&l💎 HỆ THỐNG CHỐNG X-RAY (Engine-Mode 2)'
+    lore:
+      - '&7Trạng thái: &aĐANG KÍCH HOẠT (Fake Ores)'
+      - '&7Cơ chế: Biến toàn bộ đá ngầm thành quặng ảo.'
+      - '&7Người chơi bật X-ray sẽ thấy hàng triệu quặng giả'
+      - '&7làm mù mắt và vô hiệu hóa hoàn toàn mod X-ray!'
+    left_click_commands:
+      - '[message] &a[Anti-Xray] Hệ thống Engine-Mode 2 đang bảo vệ Kim cương, Vàng, Sắt và Mảnh vỡ cổ đại!'
+
+  'clean_ram':
+    material: BUCKET
+    slot: 40
+    display_name: '&e&l🧹 Dọn Rác Bộ Nhớ (Clean RAM)'
+    lore:
+      - '&7Kích hoạt Garbage Collector dọn dẹp RAM ngay'
+    left_click_commands:
+      - '[console] spark gc'
+      - '[message] &a[Admin] Đã kích hoạt dọn rác RAM thành công!'
+
+  'server_restart':
+    material: BARRIER
+    slot: 42
+    display_name: '&4&l🔄 KHỞI ĐỘNG LẠI SERVER (RESTART)'
+    lore:
+      - '&c&lCẢNH BÁO QUAN TRỌNG:'
+      - '&7Lưu thế giới an toàn và tự động chạy lại server.'
+      - '&eNhấp chuột để Khởi động lại ngay!'
+    left_click_commands:
+      - '[message] &c[Admin] Đang khởi động lại server...'
+      - '[console] restart'
+
+  'close_menu':
+    material: OAK_DOOR
+    slot: 49
+    display_name: '&c&lĐóng Menu'
+    left_click_commands:
+      - '[close]'

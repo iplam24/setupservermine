@@ -1,0 +1,91 @@
+# Configuration for BetterMessages
+config-version: 16
+disable-outdated-config-warning: false
+check-for-updates: false
+bungeecord-mode: false
+
+internal-messages:
+  prefix: "[&c&lTRÙM MINECRAFT&r] "
+  help-redirect: "&bType \"/bm help\" for help"
+  reloaded: "&aConfig đã được nạp lại thành công!"
+  help: "&bCommands\n- /bettermessages help: Trợ giúp\n- /bettermessages reload: Nạp lại cấu hình"
+  changed-message: "&bChanged message {message}"
+
+messages:
+  # 1. Chữ to giữa màn hình (Title & Subtitle) khi vào game
+  join-title:
+    enabled: true
+    priority: -1
+    count:
+      - -1
+    permission: false
+    message-type: title
+    message:
+      - "&c&l⚡ &6&lTRÙM MINECRAFT &c&l⚡[SUBTITLE]&eChào mừng &b&l{player} &eđến với máy chủ![FADEIN-10][STAY-60][FADEOUT-10]"
+    audience: user
+    activation:
+      - join
+    storage-type: default
+    delay: 10
+
+  # 2. Thanh chữ góc dưới (Action Bar - ngay trên thanh máu)
+  join-actionbar:
+    enabled: true
+    priority: -1
+    count:
+      - -1
+    permission: false
+    message-type: actionbar
+    message:
+      - "&e⚔ Chúc bạn chơi vui vẻ! &f• &aGõ &b/rules &ađể đọc nội quy server &e⚔"
+    audience: user
+    activation:
+      - join
+    storage-type: default
+    delay: 20
+
+  # 3. Thông báo chung trong khung chat cho toàn bộ server
+  join:
+    enabled: true
+    priority: -1
+    count:
+      - -1
+    permission: false
+    message-type: chat
+    message:
+      - "&a&l[+] &eNgười chơi &b&l{player} &eđã kết nối vào máy chủ!"
+    audience: server
+    activation:
+      - join
+    storage-type: default
+    delay: 0
+
+  # 4. Người chơi mới vào lần đầu tiên
+  first-join:
+    enabled: true
+    priority: -1
+    count:
+      - 1
+    permission: false
+    message-type: chat
+    message:
+      - "&d&l★ &eChào mừng người chơi mới &b&l{player} &elần đầu tiên gia nhập &c&lTRÙM MINECRAFT&e! &d&l★"
+    audience: server
+    activation:
+      - join
+    delay: 0
+
+  # 5. Thông báo khi rời server
+  quit:
+    enabled: true
+    priority: -1
+    count:
+      - -1
+    message-type: chat
+    permission: false
+    message:
+      - "&c&l[-] &7Người chơi &f{player} &7đã rời khỏi máy chủ."
+    audience: server
+    activation:
+      - quit
+    delay: 0

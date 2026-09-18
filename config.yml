@@ -1,0 +1,7 @@
+join-message: "&6Welcome &e%player% &ato Goku SMP!"
+leave-message: "&c%player% left the server!"
+discord-link: "https://discord.gg/MgbdRqYupf"
+
+join-sound: "ENTITY_PLAYER_LEVELUP"
+leave-sound: "ENTITY_VILLAGER_NO"
+kill-sound: "ENTITY_ENDER_DRAGON_GROWL"

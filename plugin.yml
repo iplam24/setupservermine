@@ -1,0 +1,24 @@
+name: Welcome
+version: 1.0
+main: com.goku.welcome.Welcome
+api-version: 1.21
+author: Goku
+description: Custom welcome plugin with sounds and messages
+
+commands:
+  setspawn:
+    description: Set the spawn location
+  sethome:
+    description: Set player home
+  announcements:
+    description: Send announcement
+  join:
+    description: Custom join message
+  firstjoin:
+    description: Give first join item
+  welcome:
+    description: Show help
+  discord:
+    description: Show Discord link
+  dc:
+    description: Shortcut for Discord

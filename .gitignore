@@ -1,0 +1,27 @@
+# Logs & Dumps
+logs/
+*.log
+*.log.gz
+crash-reports/
+
+# Cache & Auto-downloaded dependencies
+libraries/
+.fabric/
+.arclight/
+versions/
+
+# Playit secrets & credentials (BẢO MẬT: KHÔNG ĐƯỢC ĐẨY LÊN GITHUB)
+playit/
+playit.toml
+playit.exe
+start_playit.bat
+
+# Backups
+backups/
+mods_disabled/
+
+# Temporary databases and locks
+*.db-journal
+*.lock
+session.lock
+world/**/session.lock

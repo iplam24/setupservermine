@@ -1,0 +1,13 @@
+&8&m-----------------------------------------------------
+&c&l⚡ &6&lTRÙM MINECRAFT &c&l⚡ &e» &b&lHỆ THỐNG MÁY CHỦ SURVIVAL
+&7Chào mừng người chơi &e&l{PLAYER} &7đã tham gia máy chủ!
+&8&m-----------------------------------------------------
+&a&l📜 NỘI QUY MÁY CHỦ (BẮT BUỘC TUÂN THỦ):
+&c1. &fNghiêm cấm dùng &c&lHack / Cheat / X-Ray&f dưới mọi hình thức.
+&c2. &fCấm &c&lPhá hoại công trình (Grief)&f và trộm đồ người khác.
+&c3. &fCấm &c&lLợi dụng lỗi game (Bug / Dupe đồ)&f.
+&c4. &fKhông chửi thề, lăng mạ, xúc phạm hoặc spam chat.
+&c5. &fTôn trọng quyết định của &6&lBan Quản Trị (Admin)&f.
+&8&m-----------------------------------------------------
+&e💡 &fGõ &b/rules &fđể xem lại luật • Người chơi online: &a{ONLINE}&7/&a{MAXPLAYERS}
+&8&m-----------------------------------------------------

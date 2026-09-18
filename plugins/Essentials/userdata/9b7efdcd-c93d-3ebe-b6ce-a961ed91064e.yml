@@ -1,0 +1,31 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 127.150.33.13
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1789715681490
+  login: 1789715666367
+money: '0'
+last-account-name: xuanlam24
+logoutlocation:
+  world: ab37d7d5-e1a1-4db2-a62c-4827af8ffcb8
+  world-name: world
+  x: 55.5
+  y: 63.0
+  z: -23.5
+  yaw: -165.775390625
+  pitch: 90.0
