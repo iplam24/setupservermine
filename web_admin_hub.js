@@ -693,9 +693,9 @@ function getHtml() {
                 <p>Tự động bảo trì • Dọn rác giảm tải • Tối ưu CPU/RAM • Quản lý Mod & Plugin</p>
             </div>
             <div class="header-links">
-                <a href="http://localhost:7867" target="_blank" class="btn-link">
-                    🌐 Mở VoxelDash ↗
-                </a>
+                <button class="btn-link" onclick="switchTab('voxeldash')" style="cursor:pointer;">
+                    📊 Xem VoxelDash Live
+                </button>
             </div>
         </header>
 
@@ -740,10 +740,11 @@ function getHtml() {
 
         <!-- Navigation Tabs -->
         <div class="nav-tabs">
-            <button class="nav-btn active" onclick="switchTab('maint')">⏰ Tự Động Bảo Trì</button>
-            <button class="nav-btn" onclick="switchTab('clearlag')">🧹 Dọn Rác & Giảm Tải</button>
-            <button class="nav-btn" onclick="switchTab('perf')">🚀 Tối Ưu Hiệu Năng</button>
-            <button class="nav-btn" onclick="switchTab('mods')">🧩 Kéo Thả Mod / Plugin</button>
+            <button class="nav-btn active" id="tabBtn-maint" onclick="switchTab('maint')">⏰ Tự Động Bảo Trì</button>
+            <button class="nav-btn" id="tabBtn-clearlag" onclick="switchTab('clearlag')">🧹 Dọn Rác & Giảm Tải</button>
+            <button class="nav-btn" id="tabBtn-perf" onclick="switchTab('perf')">🚀 Tối Ưu Hiệu Năng</button>
+            <button class="nav-btn" id="tabBtn-mods" onclick="switchTab('mods')">🧩 Kéo Thả Mod / Plugin</button>
+            <button class="nav-btn" id="tabBtn-voxeldash" onclick="switchTab('voxeldash')">📊 Giám Sát VoxelDash (Live)</button>
         </div>
 
         <!-- TAB 1: MAINTENANCE -->
@@ -895,6 +896,27 @@ function getHtml() {
                 </ul>
             </div>
         </div>
+
+        <!-- TAB 5: VOXELDASH EMBED -->
+        <div class="tab-panel" id="tab-voxeldash">
+            <div class="section-card" style="padding:18px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:10px;">
+                    <div>
+                        <div class="section-title">📊 VoxelDash Live Monitor</div>
+                        <div class="section-desc" style="margin-bottom:0;">Theo dõi biểu đồ tải CPU, RAM, TPS thời gian thực và Console game trực tiếp.</div>
+                    </div>
+                    <div style="display:flex; gap:10px;">
+                        <button class="btn-link" onclick="reloadVoxelDash()" style="cursor:pointer; background:var(--bg-main);">
+                            🔄 Tải lại
+                        </button>
+                        <a href="http://localhost:7867" target="_blank" class="btn-link" id="linkVoxelDashNewTab">
+                            ↗ Mở tab mới
+                        </a>
+                    </div>
+                </div>
+                <iframe id="voxeldashFrame" src="" style="width:100%; height:780px; border:1px solid var(--border); border-radius:10px; background:#0d0b0f;" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 
     <div class="toast" id="toast">Thông báo</div>
@@ -917,9 +939,27 @@ function getHtml() {
             currentTab = tab;
             document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
             document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-            event.target.classList.add('active');
-            document.getElementById('tab-' + tab).classList.add('active');
+            const btn = document.getElementById('tabBtn-' + tab);
+            if (btn) btn.classList.add('active');
+            const panel = document.getElementById('tab-' + tab);
+            if (panel) panel.classList.add('active');
+
             if (tab === 'mods') loadFileList();
+            if (tab === 'voxeldash') {
+                const iframe = document.getElementById('voxeldashFrame');
+                const targetUrl = window.location.protocol + '//' + window.location.hostname + ':7867';
+                document.getElementById('linkVoxelDashNewTab').href = targetUrl;
+                if (!iframe.src || iframe.src === 'about:blank' || iframe.src === '') {
+                    iframe.src = targetUrl;
+                }
+            }
+        }
+
+        function reloadVoxelDash() {
+            const iframe = document.getElementById('voxeldashFrame');
+            const targetUrl = window.location.protocol + '//' + window.location.hostname + ':7867';
+            iframe.src = targetUrl;
+            showToast('🔄 Đang tải lại VoxelDash...');
         }
 
         async function fetchStatus() {
