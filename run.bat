@@ -1,4 +1,4 @@
-﻿@echo off
+@echo off
 title Arclight Fabric Server [1.21.1]
 chcp 65001 > nul
 cd /d "%~dp0"
@@ -23,9 +23,9 @@ if %errorlevel%==0 (
     echo   [-] Khong tim thay Node.js. Hub Quan Tri chua the khoi dong.
 )
 
-:: 2. Tu dong bat Cloudflare Web Tunnel de lay link tu xa
+:: 2. Tu dong bat Cloudflare Web Tunnel de lay link tu xa (thu nho xuong taskbar)
 if exist "start_web_tunnel.bat" (
-    start "Cloudflare Web Tunnel (Remote Admin)" cmd /c "start_web_tunnel.bat"
+    start "Cloudflare Web Tunnel (Remote Admin)" /min cmd /c "start_web_tunnel.bat"
     echo   [+] Da mo Cloudflare Tunnel de lay link quan tri tu xa
 )
 

@@ -5,7 +5,6 @@ logs/
 crash-reports/
 
 # Cache & Auto-downloaded dependencies
-libraries/
 .fabric/
 .arclight/
 versions/
