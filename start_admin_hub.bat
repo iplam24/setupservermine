@@ -1,4 +1,4 @@
-﻿@echo off
+@echo off
 title Minecraft Admin Control Hub
 chcp 65001 > nul
 cd /d "%~dp0"
