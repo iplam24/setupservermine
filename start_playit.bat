@@ -13,7 +13,9 @@ echo  5. Gui dia chi IP (vi du: ten-ban.joinmc.link) cho ban be vao choi!
 echo ======================================================================
 echo.
 
-if exist "%LOCALAPPDATA%\Microsoft\WinGet\Packages\DevelopedMethods.playit_Microsoft.Winget.Source_8wekyb3d8bbwe\playit.exe" (
+if exist "%~dp0playitd.exe" (
+    "%~dp0playitd.exe" --secret-path "%~dp0playit.toml"
+) else if exist "%LOCALAPPDATA%\Microsoft\WinGet\Packages\DevelopedMethods.playit_Microsoft.Winget.Source_8wekyb3d8bbwe\playit.exe" (
     "%LOCALAPPDATA%\Microsoft\WinGet\Packages\DevelopedMethods.playit_Microsoft.Winget.Source_8wekyb3d8bbwe\playit.exe"
 ) else (
     playit.exe
