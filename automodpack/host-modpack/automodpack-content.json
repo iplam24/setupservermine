@@ -15,6 +15,33 @@
       "murmur": "3278688850"
     },
     {
+      "file": "/mods/geckolib-fabric-1.21.1-4.6.1.jar",
+      "size": "597346",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "bedcd55e79b56551011c1b1c35ccd599f3a5078b",
+      "murmur": "1851359280"
+    },
+    {
+      "file": "/mods/BOMD-1.10.2-1.21.1.jar",
+      "size": "2679483",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "98d20fba57e2ecbf309e15285449cb91eee19bda",
+      "murmur": "1936575364"
+    },
+    {
+      "file": "/mods/adventurez-1.4.24.jar",
+      "size": "4946721",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "0c21d0aedc2e400f73ee4481d760c2bd98fd0645",
+      "murmur": "3232683918"
+    },
+    {
       "file": "/mods/voicechat-fabric-1.21.1-2.6.23.jar",
       "size": "5373534",
       "type": "mod",
@@ -22,6 +49,33 @@
       "forceCopy": false,
       "sha1": "b4b0f4a41aeae98098849e80a4b499f42ce01ca3",
       "murmur": "2460836985"
+    },
+    {
+      "file": "/mods/dungeons-and-taverns-v4.4.4.jar",
+      "size": "24859360",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "68c6f0dea960ce94f55f1f05d8893623da207be8",
+      "murmur": "1343841664"
+    },
+    {
+      "file": "/mods/Jade-1.21.1-Fabric-15.10.6.jar",
+      "size": "740746",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "bed67c605cbc991f474b270581cfa04ed48228df",
+      "murmur": "1264922539"
+    },
+    {
+      "file": "/mods/epic-knights-1.21.1-fabric-10.15.jar",
+      "size": "2787584",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "0bd7d5007ecf8d816e525d104f1be769f9d7604b",
+      "murmur": "844182291"
     },
     {
       "file": "/mods/spark-1.10.109-fabric.jar",
@@ -33,6 +87,33 @@
       "murmur": "1396803699"
     },
     {
+      "file": "/mods/xaerominimap-fabric-1.21.1-26.5.0.jar",
+      "size": "2233763",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "b9cec1acb286b6d7c05759c0c1e4b8a04f28d785",
+      "murmur": "908707526"
+    },
+    {
+      "file": "/mods/lithium-fabric-0.15.4+mc1.21.1.jar",
+      "size": "797454",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "7d82a004403b7780d4443d8e40361a55cfd0ae63",
+      "murmur": "629199728"
+    },
+    {
+      "file": "/mods/xaeroworldmap-fabric-1.21.1-1.46.0.jar",
+      "size": "1451734",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "532942aff4536c46cd66d0b8fea2964740562319",
+      "murmur": "1656951663"
+    },
+    {
       "file": "/mods/ferritecore-7.0.3-fabric.jar",
       "size": "123450",
       "type": "mod",
@@ -40,6 +121,87 @@
       "forceCopy": false,
       "sha1": "a8a6a34fcda177da2828cedef44e0e538cf78aad",
       "murmur": "1285178334"
+    },
+    {
+      "file": "/mods/true-ending-v1.1.2d.jar",
+      "size": "5510339",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "ef16cbaa161b54a6aa719ebd391187e11501b083",
+      "murmur": "4282207990"
+    },
+    {
+      "file": "/mods/dragonloot-1.1.7.jar",
+      "size": "183710",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "0939cbb2a14e4bcb0e7a17885116dad56079926f",
+      "murmur": "2258889498"
+    },
+    {
+      "file": "/mods/cloth-config-15.0.140-fabric.jar",
+      "size": "1157166",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "5d82342a2df53fd6df712bfdd583a811572918a4",
+      "murmur": "1877101333"
+    },
+    {
+      "file": "/mods/jei-1.21.1-fabric-19.56.0.441.jar",
+      "size": "2194158",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "a36e33f080f3f22330d2e19c4ee849adc0974b70",
+      "murmur": "109482951"
+    },
+    {
+      "file": "/mods/fabric-language-kotlin-1.12.3+kotlin.2.0.21.jar",
+      "size": "7137406",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "54cd3900a904b81bd24c4a35b6577a2ac197b51a",
+      "murmur": "1389669081"
+    },
+    {
+      "file": "/mods/appleskin-fabric-mc1.21-3.0.6.jar",
+      "size": "1082585",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "97452cfadfde1f8f8c67838643019eabafa58fbb",
+      "murmur": "604462130"
+    },
+    {
+      "file": "/mods/cardinal-components-api-6.1.3.jar",
+      "size": "229645",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "e762f5205c0fd0f9bed1c04432bf9b51ec832882",
+      "murmur": "257328380"
+    },
+    {
+      "file": "/mods/DungeonsArise-1.21.1-2.1.68-fabric-release.jar",
+      "size": "11864952",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "67c35d9a55e1f16ae5b7b00d180f61a1578476fb",
+      "murmur": "820986961"
+    },
+    {
+      "file": "/mods/architectury-13.0.11-fabric.jar",
+      "size": "600921",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "18200609d4c3571c4237b50884966f6fd82431ea",
+      "murmur": "1243369856"
     }
   ],
   "nonModpackFilesToDelete": []

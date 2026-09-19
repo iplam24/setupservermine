@@ -272,6 +272,23 @@ const server = http.createServer(async (req, res) => {
         return;
     }
 
+    // Download Client Mods
+    if (url.pathname === '/client_mods.zip' || url.pathname === '/download/client_mods.zip') {
+        const clientZip = path.join(SERVER_DIR, 'client_mods.zip');
+        if (fs.existsSync(clientZip)) {
+            const stat = fs.statSync(clientZip);
+            res.writeHead(200, {
+                'Content-Type': 'application/zip',
+                'Content-Length': stat.size,
+                'Content-Disposition': 'attachment; filename="client_mods.zip"'
+            });
+            return fs.createReadStream(clientZip).pipe(res);
+        } else {
+            res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+            return res.end('Chưa tạo file client_mods.zip');
+        }
+    }
+
     // File Manager APIs
     if (url.pathname === '/api/list') {
         const mods = getFiles(MODS_DIR);
@@ -878,9 +895,14 @@ function getHtml() {
                 <div class="section-title">🧩 Kéo thả cài đặt Mod & Plugin</div>
                 <div class="section-desc">Kéo file .jar trực tiếp từ máy tính vào ô bên dưới để cài đặt vào server.</div>
 
-                <div style="display:flex; gap:10px; margin-bottom:15px;">
-                    <button class="nav-btn active" id="btnSubMods" onclick="setModFolder('mods')">Thư mục Mods (Fabric)</button>
-                    <button class="nav-btn" id="btnSubPlugins" onclick="setModFolder('plugins')">Thư mục Plugins (Spigot)</button>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:15px;">
+                    <div style="display:flex; gap:10px;">
+                        <button class="nav-btn active" id="btnSubMods" onclick="setModFolder('mods')">Thư mục Mods (Fabric)</button>
+                        <button class="nav-btn" id="btnSubPlugins" onclick="setModFolder('plugins')">Thư mục Plugins (Spigot)</button>
+                    </div>
+                    <a href="/download/client_mods.zip" class="btn-link" style="background: linear-gradient(135deg, #10b981, #059669); color:#fff; font-weight:700; text-decoration:none; padding:8px 16px; border-radius:8px; display:inline-flex; align-items:center; gap:6px; box-shadow: 0 4px 12px rgba(16,185,129,0.3);" download>
+                        📦 Tải Trọn Bộ Mod Cho Client (.zip)
+                    </a>
                 </div>
 
                 <div class="dropzone" id="dropzone">
