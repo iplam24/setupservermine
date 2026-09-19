@@ -195,15 +195,6 @@
       "murmur": "4027742845"
     },
     {
-      "file": "/mods/ItemBorders-1.21-fabric-1.2.5.jar",
-      "size": "23909",
-      "type": "mod",
-      "editable": false,
-      "forceCopy": false,
-      "sha1": "be585baafcfe1f6b972b8a819f66177d3b1b985b",
-      "murmur": "1158173156"
-    },
-    {
       "file": "/mods/JustEnoughResources-Fabric-1.21.1-1.6.0.17.jar",
       "size": "245461",
       "type": "mod",
