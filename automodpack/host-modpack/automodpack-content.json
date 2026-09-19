@@ -15,13 +15,13 @@
       "murmur": "3278688850"
     },
     {
-      "file": "/mods/geckolib-fabric-1.21.1-4.6.1.jar",
-      "size": "597346",
+      "file": "/mods/adventurez-1.4.24.jar",
+      "size": "4946721",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "bedcd55e79b56551011c1b1c35ccd599f3a5078b",
-      "murmur": "1851359280"
+      "sha1": "0c21d0aedc2e400f73ee4481d760c2bd98fd0645",
+      "murmur": "3232683918"
     },
     {
       "file": "/mods/BOMD-1.10.2-1.21.1.jar",
@@ -33,13 +33,13 @@
       "murmur": "1936575364"
     },
     {
-      "file": "/mods/adventurez-1.4.24.jar",
-      "size": "4946721",
+      "file": "/mods/geckolib-fabric-1.21.1-4.6.1.jar",
+      "size": "597346",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "0c21d0aedc2e400f73ee4481d760c2bd98fd0645",
-      "murmur": "3232683918"
+      "sha1": "bedcd55e79b56551011c1b1c35ccd599f3a5078b",
+      "murmur": "1851359280"
     },
     {
       "file": "/mods/voicechat-fabric-1.21.1-2.6.23.jar",
@@ -105,15 +105,6 @@
       "murmur": "629199728"
     },
     {
-      "file": "/mods/xaeroworldmap-fabric-1.21.1-1.46.0.jar",
-      "size": "1451734",
-      "type": "mod",
-      "editable": false,
-      "forceCopy": false,
-      "sha1": "532942aff4536c46cd66d0b8fea2964740562319",
-      "murmur": "1656951663"
-    },
-    {
       "file": "/mods/ferritecore-7.0.3-fabric.jar",
       "size": "123450",
       "type": "mod",
@@ -130,6 +121,15 @@
       "forceCopy": false,
       "sha1": "ef16cbaa161b54a6aa719ebd391187e11501b083",
       "murmur": "4282207990"
+    },
+    {
+      "file": "/mods/xaeroworldmap-fabric-1.21.1-1.46.0.jar",
+      "size": "1451734",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "532942aff4536c46cd66d0b8fea2964740562319",
+      "murmur": "1656951663"
     },
     {
       "file": "/mods/dragonloot-1.1.7.jar",
@@ -159,15 +159,6 @@
       "murmur": "109482951"
     },
     {
-      "file": "/mods/fabric-language-kotlin-1.12.3+kotlin.2.0.21.jar",
-      "size": "7137406",
-      "type": "mod",
-      "editable": false,
-      "forceCopy": false,
-      "sha1": "54cd3900a904b81bd24c4a35b6577a2ac197b51a",
-      "murmur": "1389669081"
-    },
-    {
       "file": "/mods/appleskin-fabric-mc1.21-3.0.6.jar",
       "size": "1082585",
       "type": "mod",
@@ -175,6 +166,15 @@
       "forceCopy": false,
       "sha1": "97452cfadfde1f8f8c67838643019eabafa58fbb",
       "murmur": "604462130"
+    },
+    {
+      "file": "/mods/fabric-language-kotlin-1.12.3+kotlin.2.0.21.jar",
+      "size": "7137406",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "54cd3900a904b81bd24c4a35b6577a2ac197b51a",
+      "murmur": "1389669081"
     },
     {
       "file": "/mods/cardinal-components-api-6.1.3.jar",
