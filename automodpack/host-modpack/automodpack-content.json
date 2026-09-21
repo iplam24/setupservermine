@@ -6,13 +6,13 @@
   "mcVersion": "1.21.1",
   "list": [
     {
-      "file": "/mods/YungsBetterDesertTemples-1.21.1-Fabric-4.1.5.jar",
-      "size": "1033207",
+      "file": "/mods/adventurez-1.4.24.jar",
+      "size": "4946721",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "cdefe7b69ea8f3d14dffbad19024a85cccc9478a",
-      "murmur": "4134096979"
+      "sha1": "0c21d0aedc2e400f73ee4481d760c2bd98fd0645",
+      "murmur": "3232683918"
     },
     {
       "file": "/mods/BOMD-1.10.2-1.21.1.jar",
@@ -24,13 +24,13 @@
       "murmur": "1936575364"
     },
     {
-      "file": "/mods/adventurez-1.4.24.jar",
-      "size": "4946721",
+      "file": "/mods/Philips-Ruins1.21.1-1.9-Fabric.jar",
+      "size": "1523286",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "0c21d0aedc2e400f73ee4481d760c2bd98fd0645",
-      "murmur": "3232683918"
+      "sha1": "4d020670d6d25e74a9d62130406a0346021f234c",
+      "murmur": "3693672222"
     },
     {
       "file": "/mods/dungeons-and-taverns-v4.4.4.jar",
@@ -42,15 +42,6 @@
       "murmur": "1343841664"
     },
     {
-      "file": "/mods/toms_storage_fabric-1.21-2.4.2.jar",
-      "size": "1971384",
-      "type": "mod",
-      "editable": false,
-      "forceCopy": false,
-      "sha1": "a0859e6f04aebb4afdc1923eac689f7d3309261c",
-      "murmur": "3751408400"
-    },
-    {
       "file": "/mods/spark-1.10.109-fabric.jar",
       "size": "3609981",
       "type": "mod",
@@ -60,22 +51,40 @@
       "murmur": "1396803699"
     },
     {
-      "file": "/mods/xaerominimap-fabric-1.21.1-26.5.0.jar",
-      "size": "2233763",
+      "file": "/mods/fzzy_config-0.7.7+1.21.jar",
+      "size": "2387721",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "b9cec1acb286b6d7c05759c0c1e4b8a04f28d785",
-      "murmur": "908707526"
+      "sha1": "5e96a2f5b0a26417c7f10f5bdbeaa62ec4ec4cd9",
+      "murmur": "1811227406"
     },
     {
-      "file": "/mods/visuality-0.7.7+1.21.jar",
-      "size": "79452",
+      "file": "/mods/youre-in-grave-danger-fabric-2.4.18.jar",
+      "size": "831659",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "8d239710c1c1983d780ad04686c3c3d0d1b1585e",
-      "murmur": "3656518694"
+      "sha1": "d02230f473aecbd128c4dea45eda4c0603a6f390",
+      "murmur": "3255513769"
+    },
+    {
+      "file": "/mods/PassableFoliage-1.21.1-Fabric-9.2.1.jar",
+      "size": "44983",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "300565048e3cae15e44cf2652031bb42458b1236",
+      "murmur": "3300020577"
+    },
+    {
+      "file": "/mods/justenoughbreeding-fabric-1.21.1-3.2.0.jar",
+      "size": "265275",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "3411d05bf136a7781c68a55990c58005c81b2128",
+      "murmur": "2485349098"
     },
     {
       "file": "/mods/xaeroworldmap-fabric-1.21.1-1.46.0.jar",
@@ -87,40 +96,13 @@
       "murmur": "1656951663"
     },
     {
-      "file": "/mods/YungsBetterNetherFortresses-1.21.1-Fabric-3.1.5.jar",
-      "size": "736418",
+      "file": "/mods/visuality-0.7.7+1.21.jar",
+      "size": "79452",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "99096e90aba45f3fb4eec5b9daa8acdb6497fa72",
-      "murmur": "2371826613"
-    },
-    {
-      "file": "/mods/YungsBetterOceanMonuments-1.21.1-Fabric-4.1.2.jar",
-      "size": "1150417",
-      "type": "mod",
-      "editable": false,
-      "forceCopy": false,
-      "sha1": "e8b566f5c941018cbd0bf8a32aa4c4ea3a410bfd",
-      "murmur": "3286228850"
-    },
-    {
-      "file": "/mods/dragonloot-1.1.7.jar",
-      "size": "183710",
-      "type": "mod",
-      "editable": false,
-      "forceCopy": false,
-      "sha1": "0939cbb2a14e4bcb0e7a17885116dad56079926f",
-      "murmur": "2258889498"
-    },
-    {
-      "file": "/mods/betterarcheology-fabric-1.21.1-1.3.8.jar",
-      "size": "3082977",
-      "type": "mod",
-      "editable": false,
-      "forceCopy": false,
-      "sha1": "dd907561c0d43b69aa7db682e18da99d5d8ac99a",
-      "murmur": "2305402338"
+      "sha1": "8d239710c1c1983d780ad04686c3c3d0d1b1585e",
+      "murmur": "3656518694"
     },
     {
       "file": "/mods/appleskin-fabric-mc1.21-3.0.6.jar",
@@ -132,13 +114,40 @@
       "murmur": "604462130"
     },
     {
-      "file": "/mods/friendsandfoes-fabric-4.0.27+mc1.21.1.jar",
-      "size": "5106125",
+      "file": "/mods/CreeperOverhaul-fabric-1.21.1-4.0.6.jar",
+      "size": "1180412",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "e037fa0cb780b76b401be5f00b4b747b5b8cbf63",
-      "murmur": "4196420441"
+      "sha1": "1e12b0d7c310ad60bd648dd97cbc459ab57eaa38",
+      "murmur": "2701305812"
+    },
+    {
+      "file": "/mods/PuzzlesLib-v21.1.7-1.21.1-Fabric.jar",
+      "size": "1093481",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "12cf13aa6739547a4585d6b42b2c07dc18f0e916",
+      "murmur": "3610872744"
+    },
+    {
+      "file": "/mods/polymorph-fabric-1.2.0+1.21.1.jar",
+      "size": "318555",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "3de2e606ffc8b4071237de209df163456ad4922a",
+      "murmur": "2474656191"
+    },
+    {
+      "file": "/mods/attributefix-fabric-1.21.1-21.1.2.jar",
+      "size": "21578",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "7a8a822b78421baf15ad3af4d63b8bcf6eb610f9",
+      "murmur": "3933120107"
     },
     {
       "file": "/mods/notenoughanimations-fabric-1.12.4-mc1.21.1.jar",
@@ -150,6 +159,24 @@
       "murmur": "4031751397"
     },
     {
+      "file": "/mods/JustEnoughProfessions-fabric-1.21.1-4.0.5.jar",
+      "size": "24934",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "6028967c57e6fb9fe2e2cfb1fb93ace768c06af4",
+      "murmur": "1640777743"
+    },
+    {
+      "file": "/mods/FallingTree-1.21.1-1.21.1.11.jar",
+      "size": "496356",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "7e1b3ee0ba89b556d5a468797bb1b5f4e2b8ccb7",
+      "murmur": "2931818047"
+    },
+    {
       "file": "/mods/Amplified_Nether_26.2_v1.2.16.jar",
       "size": "108430",
       "type": "mod",
@@ -159,31 +186,13 @@
       "murmur": "748008250"
     },
     {
-      "file": "/mods/architectury-13.0.11-fabric.jar",
-      "size": "600921",
+      "file": "/mods/mcw-bridges-3.1.2-mc1.21.1fabric.jar",
+      "size": "666524",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "18200609d4c3571c4237b50884966f6fd82431ea",
-      "murmur": "1243369856"
-    },
-    {
-      "file": "/mods/bettercombat-fabric-2.4.0+1.21.1.jar",
-      "size": "930023",
-      "type": "mod",
-      "editable": false,
-      "forceCopy": false,
-      "sha1": "38d1d1f22e9255092baf85abf93a3b9746fa6ed1",
-      "murmur": "1919503402"
-    },
-    {
-      "file": "/mods/Terralith_1.21.x_v2.5.7.jar",
-      "size": "3113485",
-      "type": "mod",
-      "editable": false,
-      "forceCopy": false,
-      "sha1": "3f3ec06abc67d4bd28213b79c512ebc604c709b2",
-      "murmur": "3426925883"
+      "sha1": "c496bc2bc330e23c5100fd0a2421d12d4da7cd11",
+      "murmur": "1873337528"
     },
     {
       "file": "/mods/PresenceFootsteps-1.11.2+1.21.jar",
@@ -195,22 +204,22 @@
       "murmur": "4027742845"
     },
     {
-      "file": "/mods/JustEnoughResources-Fabric-1.21.1-1.6.0.17.jar",
-      "size": "245461",
+      "file": "/mods/dynamic-fps-3.11.4+minecraft-1.21.0-fabric.jar",
+      "size": "217532",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "3ec90637c4eba5664649e3e2c514e8b43ba107d1",
-      "murmur": "3606973345"
+      "sha1": "c0ee92c6d8a48e077aa9b02f3470619eab17d59c",
+      "murmur": "4058804732"
     },
     {
-      "file": "/mods/resourcefullib-fabric-1.21-3.0.12.jar",
-      "size": "485586",
+      "file": "/mods/jewelry-fabric-2.4.0+1.21.1.jar",
+      "size": "511636",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "cb67e1302b5116953f45556cc61dbcf40d986ecd",
-      "murmur": "3889720147"
+      "sha1": "ba0bdfd52e89d7c8e782eecf76421acfb581168a",
+      "murmur": "3105311006"
     },
     {
       "file": "/mods/epic-knights-1.21.1-fabric-10.15.jar",
@@ -231,6 +240,15 @@
       "murmur": "1028342049"
     },
     {
+      "file": "/mods/trade-cycling-fabric-1.21.1-1.0.22.jar",
+      "size": "521074",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "bda009524e667809e14c88934fc6ecfddf298485",
+      "murmur": "973234463"
+    },
+    {
       "file": "/mods/balm-fabric-1.21.1-21.0.19.jar",
       "size": "431022",
       "type": "mod",
@@ -238,15 +256,6 @@
       "forceCopy": false,
       "sha1": "24ed3d34ab5b1d12102ef9fb1194d0a562aff941",
       "murmur": "948059802"
-    },
-    {
-      "file": "/mods/sound-physics-remastered-fabric-1.21.1-1.5.1.jar",
-      "size": "205671",
-      "type": "mod",
-      "editable": false,
-      "forceCopy": false,
-      "sha1": "07d9f758338ad5be38b7fa1eb32c71a7c4840ea0",
-      "murmur": "3301089618"
     },
     {
       "file": "/mods/true-ending-v1.1.2d.jar",
@@ -258,13 +267,13 @@
       "murmur": "4282207990"
     },
     {
-      "file": "/mods/trinkets-3.10.0.jar",
-      "size": "272944",
+      "file": "/mods/bookshelf-fabric-1.21.1-21.1.2.jar",
+      "size": "160448",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "f54756f938c7c273713b9f97d4a987eec551e892",
-      "murmur": "1163983694"
+      "sha1": "630c30f09695212324af3d30374efe889e89a7a2",
+      "murmur": "1889330108"
     },
     {
       "file": "/mods/YungsBetterMineshafts-1.21.1-Fabric-5.1.1.jar",
@@ -285,22 +294,13 @@
       "murmur": "4232483337"
     },
     {
-      "file": "/mods/cardinal-components-api-6.1.3.jar",
-      "size": "229645",
+      "file": "/mods/Kiwi-1.21.1-Fabric-15.8.8.jar",
+      "size": "1557700",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "e762f5205c0fd0f9bed1c04432bf9b51ec832882",
-      "murmur": "257328380"
-    },
-    {
-      "file": "/mods/YungsBetterDungeons-1.21.1-Fabric-5.1.4.jar",
-      "size": "909660",
-      "type": "mod",
-      "editable": false,
-      "forceCopy": false,
-      "sha1": "1596a14713ed6c1d9deb5a3a328774e9bfa39de6",
-      "murmur": "3796337073"
+      "sha1": "16110734225e99f7da3497368361b8ee89f98db4",
+      "murmur": "875816887"
     },
     {
       "file": "/mods/handcrafted-fabric-1.21.1-4.0.3.jar",
@@ -312,13 +312,22 @@
       "murmur": "3248713794"
     },
     {
-      "file": "/mods/geckolib-fabric-1.21.1-4.6.1.jar",
-      "size": "597346",
+      "file": "/mods/mcw-paths-1.1.2-mc1.21.1fabric.jar",
+      "size": "767800",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "bedcd55e79b56551011c1b1c35ccd599f3a5078b",
-      "murmur": "1851359280"
+      "sha1": "c639899d476dd55a37c1049658898db32157af1c",
+      "murmur": "2490564198"
+    },
+    {
+      "file": "/mods/ItemPhysicLite_FABRIC_v1.6.11_mc1.21.1.jar",
+      "size": "23752",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "9a9fbb79a27d58343d16ab93e201970015cb462f",
+      "murmur": "195327523"
     },
     {
       "file": "/mods/YungsBetterJungleTemples-1.21.1-Fabric-3.1.2.jar",
@@ -330,6 +339,15 @@
       "murmur": "2808602548"
     },
     {
+      "file": "/mods/mcw-roofs-2.3.2-mc1.21.1fabric.jar",
+      "size": "1790000",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "2367e5972a8ab30cc4f764e6ec98841e3eaa341a",
+      "murmur": "1239090963"
+    },
+    {
       "file": "/mods/voicechat-fabric-1.21.1-2.6.23.jar",
       "size": "5373534",
       "type": "mod",
@@ -339,22 +357,13 @@
       "murmur": "2460836985"
     },
     {
-      "file": "/mods/Geophilic v3.6.mod.jar",
-      "size": "906446",
+      "file": "/mods/exposure-fabric-1.21.1-1.9.18.jar",
+      "size": "1980872",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "1eb1700a02ebeab1bf1f3004abd4a02263495d25",
-      "murmur": "2369413622"
-    },
-    {
-      "file": "/mods/artifacts-fabric-13.2.4.jar",
-      "size": "1487812",
-      "type": "mod",
-      "editable": false,
-      "forceCopy": false,
-      "sha1": "58c9d21078945dec2d20df05aeacd635be9d3502",
-      "murmur": "3652541024"
+      "sha1": "cc73df98d4693a65d9133478cb1d3b72b89fb667",
+      "murmur": "126037513"
     },
     {
       "file": "/mods/waystones-fabric-1.21.1-21.1.5.jar",
@@ -366,6 +375,42 @@
       "murmur": "2620724516"
     },
     {
+      "file": "/mods/combat_roll-fabric-2.0.6+1.21.1.jar",
+      "size": "192085",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "29ab57ff85914dd8dc20a350620c00dc5af9efec",
+      "murmur": "3159161468"
+    },
+    {
+      "file": "/mods/yet_another_config_lib_v3-3.6.6+1.21.1-fabric.jar",
+      "size": "1116172",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "0ffa4ad99a4c3c930f563ec6595c68b7cd31a283",
+      "murmur": "3997020301"
+    },
+    {
+      "file": "/mods/IronChests-2.0.4.jar",
+      "size": "582972",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "9955f424f4254110a77412bf34d62d46d20120a1",
+      "murmur": "1333830850"
+    },
+    {
+      "file": "/mods/BetterAnimationsCollection-v21.1.1-1.21.1-Fabric.jar",
+      "size": "188331",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "7c489bf6f3943db4a76326b7ea87da1f067a779f",
+      "murmur": "3748898483"
+    },
+    {
       "file": "/mods/fabric-language-kotlin-1.12.3+kotlin.2.0.21.jar",
       "size": "7137406",
       "type": "mod",
@@ -375,13 +420,13 @@
       "murmur": "1389669081"
     },
     {
-      "file": "/mods/YungsBetterWitchHuts-1.21.1-Fabric-4.1.1.jar",
-      "size": "298721",
+      "file": "/mods/paladins-fabric-3.1.1+1.21.1.jar",
+      "size": "3138805",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "52389a853f0b0d7d134147a1be842675e5c67e40",
-      "murmur": "3490242281"
+      "sha1": "477e2210bbf90313e58de65672126a2ac57f010e",
+      "murmur": "646144403"
     },
     {
       "file": "/mods/Nullscape_1.21.x_v1.2.14.jar",
@@ -393,13 +438,13 @@
       "murmur": "3833846824"
     },
     {
-      "file": "/mods/fabric-api-0.116.17+1.21.1.jar",
-      "size": "2452735",
+      "file": "/mods/armor_model_api-fabric-1.1.0+1.21.1.jar",
+      "size": "92823",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "810b2b0195371a012906241d8b85a32a1d6de53c",
-      "murmur": "3278688850"
+      "sha1": "a16daaa6a159ce4659bbbc63ebe730891f44b42e",
+      "murmur": "2883354919"
     },
     {
       "file": "/mods/YungsBetterEndIsland-1.21.1-Fabric-3.1.2.jar",
@@ -411,13 +456,22 @@
       "murmur": "460900966"
     },
     {
-      "file": "/mods/MouseTweaks-fabric-mc1.21-2.26.jar",
-      "size": "75984",
+      "file": "/mods/fabric-api-0.116.17+1.21.1.jar",
+      "size": "2452735",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "ee81af33a5606ef2cd057e075833d7c69836c210",
-      "murmur": "717601083"
+      "sha1": "810b2b0195371a012906241d8b85a32a1d6de53c",
+      "murmur": "3278688850"
+    },
+    {
+      "file": "/mods/fabric-seasons-2.4.2-BETA+1.21.jar",
+      "size": "433476",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "14899b2fd77be1e30fa3b17c6b0da620bb241233",
+      "murmur": "193248930"
     },
     {
       "file": "/mods/Jade-1.21.1-Fabric-15.10.6.jar",
@@ -429,6 +483,15 @@
       "murmur": "1264922539"
     },
     {
+      "file": "/mods/mcw-mcwfences-1.2.1-mc1.21.1fabric.jar",
+      "size": "651571",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "f9be270761e17ad131f186b2537c2ce2f305815a",
+      "murmur": "1706073822"
+    },
+    {
       "file": "/mods/resourcefulconfig-fabric-1.21-3.0.9.jar",
       "size": "345013",
       "type": "mod",
@@ -438,13 +501,31 @@
       "murmur": "1651936101"
     },
     {
-      "file": "/mods/make_bubbles_pop-0.3.0-fabric-mc1.19.4-1.21.jar",
-      "size": "27579",
+      "file": "/mods/chalk-2.2.5+1.21.1.jar",
+      "size": "209104",
       "type": "mod",
       "editable": false,
       "forceCopy": false,
-      "sha1": "d59abea779c343b22925ea026d809073aa49ebbc",
-      "murmur": "1241899050"
+      "sha1": "ec66cf3d0218440192294d41f51528f4b3c8d757",
+      "murmur": "4186504389"
+    },
+    {
+      "file": "/mods/LeavesBeGone-v21.1.1-1.21.1-Fabric.jar",
+      "size": "55826",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "b0f60368cb0e06dc4b0b4d465a6f04b1ec421c18",
+      "murmur": "2847565211"
+    },
+    {
+      "file": "/mods/emi-1.1.24+1.21.1+fabric.jar",
+      "size": "1098223",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "6abcf2a10a629e401bff73a8fd1ad328a72b1482",
+      "murmur": "2427743719"
     },
     {
       "file": "/mods/lithium-fabric-0.15.4+mc1.21.1.jar",
@@ -465,15 +546,6 @@
       "murmur": "1285178334"
     },
     {
-      "file": "/mods/jei-1.21.1-fabric-19.56.0.441.jar",
-      "size": "2194158",
-      "type": "mod",
-      "editable": false,
-      "forceCopy": false,
-      "sha1": "a36e33f080f3f22330d2e19c4ee849adc0974b70",
-      "murmur": "109482951"
-    },
-    {
       "file": "/mods/cloth-config-15.0.140-fabric.jar",
       "size": "1157166",
       "type": "mod",
@@ -481,6 +553,15 @@
       "forceCopy": false,
       "sha1": "5d82342a2df53fd6df712bfdd583a811572918a4",
       "murmur": "1877101333"
+    },
+    {
+      "file": "/mods/jei-1.21.1-fabric-19.56.0.441.jar",
+      "size": "2194158",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "a36e33f080f3f22330d2e19c4ee849adc0974b70",
+      "murmur": "109482951"
     },
     {
       "file": "/mods/Explorify v1.6.5.mod.jar",
@@ -492,6 +573,564 @@
       "murmur": "1043010622"
     },
     {
+      "file": "/mods/VisualWorkbench-v21.1.1-1.21.1-Fabric.jar",
+      "size": "80510",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "2cb424841dea0eb6073b8a78ea6ae81fa73da0bc",
+      "murmur": "3582826647"
+    },
+    {
+      "file": "/mods/structure_pool_api-fabric-1.2.1+1.21.1.jar",
+      "size": "140933",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "ca2fb52f5fd2c9b688860366eabdb8ec14297ad5",
+      "murmur": "685943306"
+    },
+    {
+      "file": "/mods/YungsBetterDesertTemples-1.21.1-Fabric-4.1.5.jar",
+      "size": "1033207",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "cdefe7b69ea8f3d14dffbad19024a85cccc9478a",
+      "murmur": "4134096979"
+    },
+    {
+      "file": "/mods/shulkerboxtooltip-fabric-5.1.9+1.21.1.jar",
+      "size": "379091",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "3f119c2fe561235f5af384fba4dd7a4b6f1617c2",
+      "murmur": "2302506477"
+    },
+    {
+      "file": "/mods/toms_storage_fabric-1.21-2.4.2.jar",
+      "size": "1971384",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "a0859e6f04aebb4afdc1923eac689f7d3309261c",
+      "murmur": "3751408400"
+    },
+    {
+      "file": "/mods/badpackets-fabric-0.8.2.jar",
+      "size": "55638",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "5479129bfeaaad1ff2f8c5ebbda8a6dc7c4d7aaf",
+      "murmur": "2371576871"
+    },
+    {
+      "file": "/mods/xaerominimap-fabric-1.21.1-26.5.0.jar",
+      "size": "2233763",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "b9cec1acb286b6d7c05759c0c1e4b8a04f28d785",
+      "murmur": "908707526"
+    },
+    {
+      "file": "/mods/oceansdelight-fdrf-fabric-1.0.3-1.21.1.jar",
+      "size": "98824",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "949e5bad3fbd2d3f3e1ff1b5ec4c4dfff7e02622",
+      "murmur": "1679380583"
+    },
+    {
+      "file": "/mods/Structory_26.2_v1.3.7.jar",
+      "size": "1261346",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "8a9a1a1b3f74398310420b6fbe2c26ef142bed42",
+      "murmur": "3310403509"
+    },
+    {
+      "file": "/mods/ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar",
+      "size": "633065",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "18bf1f21cd2db6dcd4e42db85eae54e2a49a48ee",
+      "murmur": "4152126359"
+    },
+    {
+      "file": "/mods/YungsBetterNetherFortresses-1.21.1-Fabric-3.1.5.jar",
+      "size": "736418",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "99096e90aba45f3fb4eec5b9daa8acdb6497fa72",
+      "murmur": "2371826613"
+    },
+    {
+      "file": "/mods/dragonloot-1.1.7.jar",
+      "size": "183710",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "0939cbb2a14e4bcb0e7a17885116dad56079926f",
+      "murmur": "2258889498"
+    },
+    {
+      "file": "/mods/YungsBetterOceanMonuments-1.21.1-Fabric-4.1.2.jar",
+      "size": "1150417",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "e8b566f5c941018cbd0bf8a32aa4c4ea3a410bfd",
+      "murmur": "3286228850"
+    },
+    {
+      "file": "/mods/betterarcheology-fabric-1.21.1-1.3.8.jar",
+      "size": "3082977",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "dd907561c0d43b69aa7db682e18da99d5d8ac99a",
+      "murmur": "2305402338"
+    },
+    {
+      "file": "/mods/friendsandfoes-fabric-4.0.27+mc1.21.1.jar",
+      "size": "5106125",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "e037fa0cb780b76b401be5f00b4b747b5b8cbf63",
+      "murmur": "4196420441"
+    },
+    {
+      "file": "/mods/mcw-paintings-1.1.0-mc1.21.1fabric.jar",
+      "size": "179348",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "c987bbb2aa9b01da8604f955a26f9d06876d25c3",
+      "murmur": "656369515"
+    },
+    {
+      "file": "/mods/kibe-2.3.1-fabric-1.21.1.jar",
+      "size": "1465104",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "188737b6c757ae046dab9ede48431edcf6275114",
+      "murmur": "3466394824"
+    },
+    {
+      "file": "/mods/waveycapes-fabric-1.11.2-mc1.21.1.jar",
+      "size": "1789704",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "3cefa859d45c5148492923e7aa363fc19c5995d6",
+      "murmur": "2384171233"
+    },
+    {
+      "file": "/mods/architectury-13.0.11-fabric.jar",
+      "size": "600921",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "18200609d4c3571c4237b50884966f6fd82431ea",
+      "murmur": "1243369856"
+    },
+    {
+      "file": "/mods/bettercombat-fabric-2.4.0+1.21.1.jar",
+      "size": "930023",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "38d1d1f22e9255092baf85abf93a3b9746fa6ed1",
+      "murmur": "1919503402"
+    },
+    {
+      "file": "/mods/simplyswords-fabric-1.70.2-1.21.1.jar",
+      "size": "16207154",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "322ec2cb0bbdb70c5e4106c85a984655ffaf921a",
+      "murmur": "496936041"
+    },
+    {
+      "file": "/mods/Terralith_1.21.x_v2.5.7.jar",
+      "size": "3113485",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "3f3ec06abc67d4bd28213b79c512ebc604c709b2",
+      "murmur": "3426925883"
+    },
+    {
+      "file": "/mods/spell_power-fabric-1.6.0+1.21.1.jar",
+      "size": "226992",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "8d8b356d56aa63b29701ab256e113bb720f9cea1",
+      "murmur": "4016064565"
+    },
+    {
+      "file": "/mods/mcw-trapdoors-1.1.5-mc1.21.1fabric.jar",
+      "size": "568267",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "ecf7e153e9ae9fa4707ad6f200177ae87d0bbfff",
+      "murmur": "1866922814"
+    },
+    {
+      "file": "/mods/bountiful-fabric-8.0.0-beta.2.jar",
+      "size": "739372",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "2e07314e5a5285adf296f39650b2f32eb80f4b3a",
+      "murmur": "4230168790"
+    },
+    {
+      "file": "/mods/JustEnoughResources-Fabric-1.21.1-1.6.0.17.jar",
+      "size": "245461",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "3ec90637c4eba5664649e3e2c514e8b43ba107d1",
+      "murmur": "3606973345"
+    },
+    {
+      "file": "/mods/resourcefullib-fabric-1.21-3.0.12.jar",
+      "size": "485586",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "cb67e1302b5116953f45556cc61dbcf40d986ecd",
+      "murmur": "3889720147"
+    },
+    {
+      "file": "/mods/archers-fabric-3.1.1+1.21.1.jar",
+      "size": "920744",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "3cfb9c48843522d80a4a0822956a2bd76f48f30a",
+      "murmur": "1668630279"
+    },
+    {
+      "file": "/mods/sound-physics-remastered-fabric-1.21.1-1.5.1.jar",
+      "size": "205671",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "07d9f758338ad5be38b7fa1eb32c71a7c4840ea0",
+      "murmur": "3301089618"
+    },
+    {
+      "file": "/mods/mcw-lights-1.1.5-mc1.21.1fabric.jar",
+      "size": "514085",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "0dacc96b850d57f9d51c232b3c123698f4bc73b3",
+      "murmur": "2101638914"
+    },
+    {
+      "file": "/mods/geckolib-fabric-1.21.1-4.7.7.jar",
+      "size": "624690",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "5062839015de5f68f89b6414806331e3d96e9e94",
+      "murmur": "3266682725"
+    },
+    {
+      "file": "/mods/ranged_weapon_api-fabric-3.0.0+1.21.1.jar",
+      "size": "159428",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "bd1876929fdee030922da31c23134d56f4a679d1",
+      "murmur": "2962381762"
+    },
+    {
+      "file": "/mods/trinkets-3.10.0.jar",
+      "size": "272944",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "f54756f938c7c273713b9f97d4a987eec551e892",
+      "murmur": "1163983694"
+    },
+    {
+      "file": "/mods/mcw-furniture-3.4.1-mc1.21.1fabric.jar",
+      "size": "2087232",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "4c914a4d3bb84103b34346e60c6aa981be8dfa23",
+      "murmur": "778289155"
+    },
+    {
+      "file": "/mods/comforts-fabric-9.0.5+1.21.1.jar",
+      "size": "914494",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "e47d6c2f0213abed8865dfa51ee05dea86c1baa9",
+      "murmur": "640985679"
+    },
+    {
+      "file": "/mods/cardinal-components-api-6.1.3.jar",
+      "size": "229645",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "e762f5205c0fd0f9bed1c04432bf9b51ec832882",
+      "murmur": "257328380"
+    },
+    {
+      "file": "/mods/rightclickharvest-fabric-4.6.1+1.21.1.jar",
+      "size": "286902",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "f987a5a1963b5e1dd37a3b4c543369a2b17358a8",
+      "murmur": "3832612181"
+    },
+    {
+      "file": "/mods/SimplyTooltips-fabric-0.1.5.jar",
+      "size": "5513375",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "2eb686991b9ca32fc9498bc05a9fd3b42f0b60a0",
+      "murmur": "3874402007"
+    },
+    {
+      "file": "/mods/YungsBetterDungeons-1.21.1-Fabric-5.1.4.jar",
+      "size": "909660",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "1596a14713ed6c1d9deb5a3a328774e9bfa39de6",
+      "murmur": "3796337073"
+    },
+    {
+      "file": "/mods/soulslike-weaponry-1.4.8-1.21.1-fabric.jar",
+      "size": "54447392",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "db41aa7c468430b98e02751d1296315cec95a0d0",
+      "murmur": "4203168691"
+    },
+    {
+      "file": "/mods/mcw-mcwwindows-2.4.2-mc1.21.1fabric.jar",
+      "size": "1278810",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "0d47db265d99f75f29c93b37489b5602f37ec4af",
+      "murmur": "2397254641"
+    },
+    {
+      "file": "/mods/TravelersTitles-1.21.1-Fabric-5.1.3.jar",
+      "size": "349651",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "b42d274cc3b41551ef3522a442f7726d1b152d00",
+      "murmur": "2773684869"
+    },
+    {
+      "file": "/mods/eating-animation-1.21+1.9.72.jar",
+      "size": "1060520",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "d89ecd0ac342697e0d1c3aaff1daa6c81bebe2f6",
+      "murmur": "2743920070"
+    },
+    {
+      "file": "/mods/Incendium_1.21.x_v5.4.4.jar",
+      "size": "4267528",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "40da6da25ec45c4d88447733255e4281b6f22fef",
+      "murmur": "2918974304"
+    },
+    {
+      "file": "/mods/Geophilic v3.6.mod.jar",
+      "size": "906446",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "1eb1700a02ebeab1bf1f3004abd4a02263495d25",
+      "murmur": "2369413622"
+    },
+    {
+      "file": "/mods/Structory_Towers_26.2_v1.0.17.jar",
+      "size": "491515",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "fa40253068726262f9db9fa048c41b96750fd4b7",
+      "murmur": "4017686508"
+    },
+    {
+      "file": "/mods/artifacts-fabric-13.2.4.jar",
+      "size": "1487812",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "58c9d21078945dec2d20df05aeacd635be9d3502",
+      "murmur": "3652541024"
+    },
+    {
+      "file": "/mods/wizards-fabric-3.1.2+1.21.1.jar",
+      "size": "4538124",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "b18638e69fe2a23d182fae9082ff313df66fa0be",
+      "murmur": "3146091777"
+    },
+    {
+      "file": "/mods/FarmersDelight-1.21.1-3.2.8+refabricated.jar",
+      "size": "3142838",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "7adf7fbfbc29b87546b286a5d9a59358dfeca1e8",
+      "murmur": "629807304"
+    },
+    {
+      "file": "/mods/YungsBetterWitchHuts-1.21.1-Fabric-4.1.1.jar",
+      "size": "298721",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "52389a853f0b0d7d134147a1be842675e5c67e40",
+      "murmur": "3490242281"
+    },
+    {
+      "file": "/mods/modmenu-11.0.4.jar",
+      "size": "973059",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "8af1b0b9ee18eab5cd5e5c97c497f0e473c49e9a",
+      "murmur": "2045004126"
+    },
+    {
+      "file": "/mods/spell_engine-fabric-1.10.7+1.21.1.jar",
+      "size": "4684499",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "17ccacfd9fbe02e5ef17baca020c15b03933c7cc",
+      "murmur": "2620145448"
+    },
+    {
+      "file": "/mods/jamlib-fabric-1.3.6+1.21.1.jar",
+      "size": "187766",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "06812c82db4a195853fd29cc03c78bd690bac6ea",
+      "murmur": "1308000539"
+    },
+    {
+      "file": "/mods/MouseTweaks-fabric-mc1.21-2.26.jar",
+      "size": "75984",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "ee81af33a5606ef2cd057e075833d7c69836c210",
+      "murmur": "717601083"
+    },
+    {
+      "file": "/mods/kambrik-fabric-8.0.0-beta.2.jar",
+      "size": "457787",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "b5da4b9ed426728e02611642cabe1a6b0514ac95",
+      "murmur": "1660360592"
+    },
+    {
+      "file": "/mods/wthit-1.21.1-fabric-12.10.2.jar",
+      "size": "876011",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "a5ad5f3e839a399e5021a543b7aa3c02e462eee0",
+      "murmur": "2637432163"
+    },
+    {
+      "file": "/mods/IllagerInvasion-v21.1.6-1.21.1-Fabric.jar",
+      "size": "2336674",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "9bffd7c89b1f1b0d671bcac68363000dd08239c7",
+      "murmur": "869490764"
+    },
+    {
+      "file": "/mods/make_bubbles_pop-0.3.0-fabric-mc1.19.4-1.21.jar",
+      "size": "27579",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "d59abea779c343b22925ea026d809073aa49ebbc",
+      "murmur": "1241899050"
+    },
+    {
+      "file": "/mods/travelersbackpack-fabric-1.21.1-10.1.39.jar",
+      "size": "1508904",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "d74374cfe5ef7d4afb4a6a3c2c9f48e41f334a8d",
+      "murmur": "670664302"
+    },
+    {
+      "file": "/mods/mcw-doors-1.1.5-mc1.21.1fabric.jar",
+      "size": "1219302",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "7b31f8db94fff60eee188a5118438def65adba40",
+      "murmur": "2404481241"
+    },
+    {
+      "file": "/mods/zoomify-2.15.2+1.21.1.jar",
+      "size": "872937",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "9ec9c47e1d3465ea0cbd595b6d9d12227239c9a6",
+      "murmur": "3994356335"
+    },
+    {
+      "file": "/mods/runes-fabric-1.3.2+1.21.1.jar",
+      "size": "326613",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "71435c2d9144ac06fc58133bb6d243316c017b98",
+      "murmur": "1154706050"
+    },
+    {
       "file": "/mods/DungeonsArise-1.21.1-2.1.68-fabric-release.jar",
       "size": "11864952",
       "type": "mod",
@@ -501,6 +1140,15 @@
       "murmur": "820986961"
     },
     {
+      "file": "/mods/clutter-1.21.1-0.6.6.jar",
+      "size": "5546634",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "d18f0216e5e1509046a0c09862f25f991128e963",
+      "murmur": "42987192"
+    },
+    {
       "file": "/mods/YungsApi-1.21.1-Fabric-5.1.9.jar",
       "size": "1284146",
       "type": "mod",
@@ -508,6 +1156,15 @@
       "forceCopy": false,
       "sha1": "28f46d1f21cf5b1ccb2efbccda6ba66ab2168407",
       "murmur": "962925745"
+    },
+    {
+      "file": "/mods/prickle-fabric-1.21.1-21.1.4.jar",
+      "size": "86102",
+      "type": "mod",
+      "editable": false,
+      "forceCopy": false,
+      "sha1": "d6bdba85a65643efb2e3881ef340ce7a97d86969",
+      "murmur": "3519713533"
     }
   ],
   "nonModpackFilesToDelete": []
