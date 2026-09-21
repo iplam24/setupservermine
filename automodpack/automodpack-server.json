@@ -13,7 +13,9 @@
     "/config/**",
     "/options.txt"
   ],
-  "forceCopyFilesToStandardLocation": [],
+  "forceCopyFilesToStandardLocation": [
+    "/mods/*.jar"
+  ],
   "nonModpackFilesToDelete": {},
   "autoExcludeServerSideMods": true,
   "autoExcludeUnnecessaryFiles": true,
