@@ -1260,7 +1260,7 @@ newbies:
   # This kit will be given regardless of cost and permissions and won't trigger any kit delay (cooldown).
   # Set to '' to disable.
   #kit: ''
-  kit: tools
+  kit: tanthu
 
 # What priority should Essentials use for handling respawns?
 # Set this to 'none' if you want vanilla respawning behavior.

@@ -107,17 +107,19 @@ items:
   'kit_btn':
     slot: 30
     material: BREAD
-    display_name: '&d&l🎁 [CỨU TRỢ QUE TĂM]'
+    display_name: '&d&l🎁 [QUÀ TÂN THỦ & CỨU TRỢ]'
     lore:
       - '&7----------------------------------'
-      - '&fGói cứu trợ bồi bổ cho người gầy:'
+      - '&fGói đồ tiếp tế khẩn cấp cho người mới:'
       - '&e• 32 Bát Phở Bò Béo Ngậy'
+      - '&e• Bộ Dụng Cụ Sinh Tồn Bằng Đá'
       - '&e• Mũ Bảo Hiểm Chống Gió Thổi'
-      - '&e• Gậy Cân Nặng (Đẩy lùi quái)'
+      - '&e• Gậy Cân Nặng (Đẩy lùi quái bay xa)'
+      - '&e• 16 Đuốc sáng + 2 Rương gỗ'
       - '&7----------------------------------'
-      - '&a➤ Nhấp để nhận quà khởi đầu!'
+      - '&a➤ Nhấp để nhận quà khởi đầu (/kit)!'
     left_click_commands:
-      - '[player] kit nguoigay'
+      - '[player] kit tanthu'
       - '[close]'
 
   'trash_btn':

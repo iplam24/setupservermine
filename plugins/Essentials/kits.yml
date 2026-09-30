@@ -17,13 +17,32 @@
 # For more information, refer to https://wiki.ess3.net/wiki/Kits
 
 kits:
-  nguoigay:
-    delay: 3600
+  tanthu:
+    delay: 1800
     items:
       - cookedbeef 32 name:&6&lPhở_Bò_Béo_Ngậy lore:&eĂn_vào_cho_có_tí_da_thịt
       - ironhelmet 1 name:&b&lMũ_Bảo_Hiểm_Chống_Gió lore:&7Đội_vào_cho_khỏi_bay_màu
       - stick 1 knockback:4 name:&c&lGậy_Cân_Nặng lore:&eGõ_văng_kẻ_thù_50_mét
-      - /broadcast §8[§d§lCỨU TRỢ§8] §eNgười gầy §b{PLAYER} §evừa nhận gói cứu trợ sinh tồn!
+      - stonesword 1 name:&f&lKiếm_Đá_Tân_Thủ
+      - stonepickaxe 1 name:&f&lCúp_Đá_Đào_Mỏ
+      - stoneaxe 1 name:&f&lRìu_Đá_Chặt_Cây_&_Bổ_Củi
+      - stoneshovel 1
+      - torch 16
+      - chest 2
+      - /broadcast §8[§d§lTÂN THỦ§8] §eNgười gầy §b{PLAYER} §evừa nhận gói quà tân thủ khởi đầu!
+  nguoigay:
+    delay: 1800
+    items:
+      - cookedbeef 32 name:&6&lPhở_Bò_Béo_Ngậy lore:&eĂn_vào_cho_có_tí_da_thịt
+      - ironhelmet 1 name:&b&lMũ_Bảo_Hiểm_Chống_Gió lore:&7Đội_vào_cho_khỏi_bay_màu
+      - stick 1 knockback:4 name:&c&lGậy_Cân_Nặng lore:&eGõ_văng_kẻ_thù_50_mét
+      - stonesword 1 name:&f&lKiếm_Đá_Tân_Thủ
+      - stonepickaxe 1 name:&f&lCúp_Đá_Đào_Mỏ
+      - stoneaxe 1 name:&f&lRìu_Đá_Chặt_Cây_&_Bổ_Củi
+      - stoneshovel 1
+      - torch 16
+      - chest 2
+      - /broadcast §8[§d§lTÂN THỦ§8] §eNgười gầy §b{PLAYER} §evừa nhận gói quà tân thủ khởi đầu!
   tools:
     delay: 10
     items:
