@@ -90,6 +90,23 @@ items:
     left_click_commands:
       - '[openguimenu] barter_shop'
 
+  'duel_btn':
+    slot: 22
+    material: NETHERITE_SWORD
+    display_name: '&c&l⚔️ [ĐẤU TRƯỜNG THÁCH ĐẤU 1v1]'
+    lore:
+      - '&7----------------------------------'
+      - '&fThách đấu solo so trình Rìu/Kiếm ai gầy hơn:'
+      - '&e• Lệnh thách đấu: &b/duel <tên_bạn>'
+      - '&a• KHÔNG MẤT ĐỒ khi chết (hồi sinh 100% nguyên vẹn)'
+      - '&6• Đặt cược tùy thích: &fCược Kim Cương hoặc Xu'
+      - '&b• Tùy chọn: &fĐấu đồ đang mặc hoặc Đồ cân bằng'
+      - '&7----------------------------------'
+      - '&c➤ Nhấp để xem cú pháp thách đấu!'
+    left_click_commands:
+      - '[message] &8[&c&lĐẤU TRƯỜNG 1v1&8] &fĐể thách đấu: Gõ &e/duel <tên_bạn_bè>&f (hoặc &e/solo <tên>&f) để mở bảng chọn chế độ & đặt cược!'
+      - '[close]'
+
   'guide_btn':
     slot: 28
     material: BOOK

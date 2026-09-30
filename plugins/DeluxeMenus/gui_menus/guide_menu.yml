@@ -22,7 +22,6 @@ items:
       - 9
       - 17
       - 18
-      - 26
       - 27
       - 28
       - 29
@@ -167,6 +166,25 @@ items:
       - '&c➤ Nhấp để mở Thùng Rác ngay!'
     left_click_commands:
       - '[player] disposal'
+      - '[close]'
+
+  'duel_guide':
+    slot: 26
+    material: NETHERITE_SWORD
+    display_name: '&c&l⚔️ [ĐẤU TRƯỜNG THÁCH ĐẤU 1v1]'
+    lore:
+      - '&7----------------------------------'
+      - '&fSo tài cao thấp solo Rìu / Kiếm:'
+      - '&e• Gõ lệnh: &b/duel <tên_bạn_bè>'
+      - '&e• Hoặc: &b/solo <tên> &7/ &b/1v1 <tên>'
+      - ''
+      - '&a✓ Không mất đồ khi chết (hồi sinh an toàn)'
+      - '&a✓ Có thể đặt cược Kim Cương / Tiền xu'
+      - '&a✓ Tùy chọn: Đấu đồ cá nhân hoặc Đồ mặc định'
+      - '&7----------------------------------'
+      - '&c➤ Nhấp để xem chi tiết lệnh /duel!'
+    left_click_commands:
+      - '[message] &8[&c&lĐẤU TRƯỜNG 1v1&8] &fĐể thách đấu: Hãy gõ &e/duel <tên_bạn>&f để gửi lời mời thách đấu!'
       - '[close]'
 
   'back_btn':
