@@ -297,6 +297,71 @@ const server = http.createServer(async (req, res) => {
                 } else {
                     msg = `Đã gỡ bỏ toàn bộ danh hiệu của ${player}!`;
                 }
+            } else if (action === 'send_announcement') {
+                let reqBody = '';
+                await new Promise(r => {
+                    req.on('data', c => reqBody += c);
+                    req.on('end', r);
+                });
+                let parsed = {};
+                try {
+                    parsed = JSON.parse(reqBody);
+                } catch (e) {
+                    parsed = {};
+                }
+                const { title, subtitle, mode, color, sound, duration } = parsed;
+                if (!title && !subtitle) throw new Error('Vui lòng nhập ít nhất tiêu đề hoặc phụ đề!');
+
+                const stayTicks = (parseInt(duration) || 5) * 20;
+                const clr = color || 'gold';
+                const sType = mode || 'both';
+
+                // 1. Cài đặt thời gian hiển thị (fade-in: 10 ticks, stay, fade-out: 20 ticks)
+                await sendRcon(`minecraft:title @a times 10 ${stayTicks} 20`).catch(() => {});
+
+                // 2. Gửi Subtitle trước (chuẩn Minecraft: subtitle phải gửi trước hoặc cùng title)
+                if (subtitle && (sType === 'title' || sType === 'both')) {
+                    const subJson = JSON.stringify({ text: subtitle, color: 'white' });
+                    await sendRcon(`minecraft:title @a subtitle ${subJson}`).catch(() => {});
+                }
+
+                // 3. Gửi Title chính giữa màn hình
+                if (sType === 'title' || sType === 'both') {
+                    const titleJson = JSON.stringify({ text: title || ' ', color: clr, bold: true });
+                    await sendRcon(`minecraft:title @a title ${titleJson}`).catch(() => {});
+                }
+
+                // 4. Gửi Actionbar (thanh chạy trên máu)
+                if (sType === 'actionbar') {
+                    const barText = (title ? `${title} • ` : '') + (subtitle || '');
+                    const barJson = JSON.stringify({ text: barText, color: clr, bold: true });
+                    await sendRcon(`minecraft:title @a actionbar ${barJson}`).catch(() => {});
+                } else if (sType === 'both' && subtitle) {
+                    const barJson = JSON.stringify({ text: subtitle, color: 'yellow' });
+                    await sendRcon(`minecraft:title @a actionbar ${barJson}`).catch(() => {});
+                }
+
+                // 5. Phát âm thanh hiệu ứng
+                if (sound && sound !== 'none') {
+                    const soundMap = {
+                        bell: 'minecraft:block.bell.use',
+                        levelup: 'minecraft:entity.player.levelup',
+                        thunder: 'minecraft:entity.lightning_bolt.thunder',
+                        dragon: 'minecraft:entity.ender_dragon.growl'
+                    };
+                    const sId = soundMap[sound] || 'minecraft:block.bell.use';
+                    await sendRcon(`minecraft:playsound ${sId} master @a ~ ~ ~ 1 1`).catch(() => {});
+                }
+
+                // 6. Gửi bản sao vào khung Chat của mọi người
+                const chatList = [
+                    { text: '[📢 THÔNG BÁO] ', color: clr, bold: true },
+                    { text: title ? `${title} ` : '', color: 'yellow', bold: true },
+                    { text: subtitle ? `• ${subtitle}` : '', color: 'white' }
+                ];
+                await sendRcon(`minecraft:tellraw @a ${JSON.stringify(chatList)}`).catch(() => {});
+
+                msg = `Đã phát thông báo màn hình tới tất cả người chơi thành công!`;
             }
 
             res.writeHead(200, { 'Content-Type': 'application/json' });
@@ -798,6 +863,7 @@ function getHtml() {
             <button class="nav-btn" id="tabBtn-perf" onclick="switchTab('perf')">🚀 Tối Ưu Hiệu Năng</button>
             <button class="nav-btn" id="tabBtn-mods" onclick="switchTab('mods')">🧩 Kéo Thả Mod / Plugin</button>
             <button class="nav-btn" id="tabBtn-tags" onclick="switchTab('tags')">👑 Cấp Danh Hiệu</button>
+            <button class="nav-btn" id="tabBtn-announce" onclick="switchTab('announce')">📢 Thông Báo Màn Hình</button>
             <button class="nav-btn" id="tabBtn-voxeldash" onclick="switchTab('voxeldash')">📊 Giám Sát VoxelDash (Live)</button>
         </div>
 
@@ -1011,6 +1077,91 @@ function getHtml() {
                 </button>
             </div>
         </div>
+
+        <!-- TAB 7: ANNOUNCEMENT / BROADCAST -->
+        <div class="tab-panel" id="tab-announce">
+            <div class="section-card">
+                <div class="section-title">📢 Bắn Thông Báo Chính Giữa Màn Hình (Title & Actionbar)</div>
+                <div class="section-desc">Gửi thông báo chữ to phát sáng xuất hiện ngay ở giữa màn hình của tất cả người chơi đang online trong game, kèm hiệu ứng âm thanh cảnh báo sống động.</div>
+
+                <div style="margin-bottom: 24px;">
+                    <label style="display:block; font-size:13px; font-weight:600; margin-bottom:10px; color:var(--text-main);">⚡ Mẫu Thông Báo Nhanh (1-Click Presets):</label>
+                    <div style="display:flex; flex-wrap:wrap; gap:10px;">
+                        <button class="action-btn maint" type="button" onclick="applyPreset('maint5')">⚠ Bảo Trì Sau 5 Phút</button>
+                        <button class="action-btn restart" type="button" onclick="applyPreset('restart60')">⚡ Khởi Động Lại 60s</button>
+                        <button class="action-btn clearlag" type="button" onclick="applyPreset('clearlag60')">🧹 Chuẩn Bị Dọn Rác</button>
+                        <button class="action-btn ram" type="button" onclick="applyPreset('kitgift')">🎁 Phát Quà Cứu Trợ</button>
+                        <button class="action-btn" type="button" style="border-color:var(--accent-cyan); color:var(--accent-cyan);" onclick="applyPreset('welcome')">👑 Chào Mừng Tân Thủ</button>
+                    </div>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                    <div>
+                        <label style="display:block; font-size:13px; font-weight:600; margin-bottom:8px; color:var(--text-main);">Tiêu Đề Chính (Chữ to đùng giữa màn hình):</label>
+                        <input type="text" id="announceTitle" class="input-box" style="width: 100%; text-align: left; font-size: 15px; font-weight:700;" placeholder="Ví dụ: ⚠ BẢO TRÌ HỆ THỐNG" oninput="updatePreview()">
+                    </div>
+                    <div>
+                        <label style="display:block; font-size:13px; font-weight:600; margin-bottom:8px; color:var(--text-main);">Dòng Phụ Đề (Chữ nhỏ hơn bên dưới):</label>
+                        <input type="text" id="announceSubtitle" class="input-box" style="width: 100%; text-align: left; font-size: 15px;" placeholder="Ví dụ: Máy chủ sẽ bảo trì sau 5 phút. Vui lòng cất đồ!" oninput="updatePreview()">
+                    </div>
+                </div>
+
+                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px;">
+                    <div>
+                        <label style="display:block; font-size:13px; font-weight:600; margin-bottom:8px; color:var(--text-main);">Vị Trí Hiển Thị:</label>
+                        <select id="announceMode" class="select-box" style="width:100%; font-size:14px;" onchange="updatePreview()">
+                            <option value="both">🌟 Giữa Màn Hình + Thanh Hành Động</option>
+                            <option value="title">📺 Chỉ Ở Chính Giữa Màn Hình (Title)</option>
+                            <option value="actionbar">💬 Chỉ Ở Thanh Hành Động (Actionbar)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display:block; font-size:13px; font-weight:600; margin-bottom:8px; color:var(--text-main);">Màu Sắc Tiêu Đề:</label>
+                        <select id="announceColor" class="select-box" style="width:100%; font-size:14px;" onchange="updatePreview()">
+                            <option value="gold">🟡 Vàng Kim (Nổi bật, rực rỡ)</option>
+                            <option value="red">🔴 Đỏ Cảnh Báo (Khẩn cấp, nguy hiểm)</option>
+                            <option value="green">🟢 Xanh Lá Cây (Quà tặng, sự kiện)</option>
+                            <option value="aqua">🔵 Xanh Ngọc (Thông tin, tin tức)</option>
+                            <option value="yellow">🟡 Vàng Chanh (Chú ý)</option>
+                            <option value="light_purple">🟣 Tím Mộng Mơ (Đặc biệt)</option>
+                            <option value="white">⚪ Trắng Tinh</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display:block; font-size:13px; font-weight:600; margin-bottom:8px; color:var(--text-main);">Âm Thanh Hiệu Ứng:</label>
+                        <select id="announceSound" class="select-box" style="width:100%; font-size:14px;">
+                            <option value="bell">🔔 Chuông Nhà Thờ Ngân Vang (Cảnh báo)</option>
+                            <option value="levelup">🎵 Tiếng Level Up (Chúc mừng/Thú vị)</option>
+                            <option value="thunder">⚡ Tiếng Sấm Sét Gầm (Gây chú ý mạnh)</option>
+                            <option value="dragon">🐲 Tiếng Rồng Ender Gầm</option>
+                            <option value="none">🔇 Không Phát Âm Thanh</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display:block; font-size:13px; font-weight:600; margin-bottom:8px; color:var(--text-main);">Thời Gian Hiển Thị:</label>
+                        <select id="announceDuration" class="select-box" style="width:100%; font-size:14px;">
+                            <option value="3">3 Giây (Vừa đủ đọc)</option>
+                            <option value="5" selected>5 Giây (Tiêu chuẩn khuyên dùng)</option>
+                            <option value="8">8 Giây (Quan trọng cần đọc kỹ)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- LIVE PREVIEW BOX -->
+                <div style="margin-bottom: 24px;">
+                    <label style="display:block; font-size:13px; font-weight:600; margin-bottom:8px; color:var(--text-muted);">Mô Phỏng Màn Hình Game Live (Preview):</label>
+                    <div id="gameScreenPreview" style="background:#090d16; border:2px dashed var(--border); border-radius:12px; padding:36px 20px; text-align:center; min-height:160px; display:flex; flex-direction:column; justify-content:center; align-items:center; position:relative; overflow:hidden;">
+                        <div id="previewTitle" style="font-size:26px; font-weight:800; color:#ffab00; text-shadow:2px 2px 8px rgba(0,0,0,0.8); margin-bottom:6px; letter-spacing:1px;">✦ SERVER NGƯỜI GẦY ✦</div>
+                        <div id="previewSubtitle" style="font-size:15px; font-weight:500; color:#ffffff; text-shadow:1px 1px 4px rgba(0,0,0,0.8); margin-bottom:16px;">Nhập tiêu đề và phụ đề để xem trước...</div>
+                        <div id="previewActionbar" style="font-size:12px; font-weight:600; color:#ffd600; background:rgba(0,0,0,0.4); padding:4px 12px; border-radius:4px; display:inline-block;">[Actionbar hiển thị trên thanh máu]</div>
+                    </div>
+                </div>
+
+                <button class="save-btn" style="width: auto; padding: 14px 36px; font-size:15px; font-weight:700; background: linear-gradient(135deg, #ff9100, #ff3d00); box-shadow: 0 4px 15px rgba(255, 61, 0, 0.4);" onclick="sendAnnouncement()">
+                    🚀 BẮN THÔNG BÁO VÀO GAME NGAY
+                </button>
+            </div>
+        </div>
     </div>
 
     <div class="toast" id="toast">Thông báo</div>
@@ -1081,6 +1232,7 @@ function getHtml() {
             if (panel) panel.classList.add('active');
 
             if (tab === 'mods') loadFileList();
+            if (tab === 'announce') updatePreview();
             if (tab === 'voxeldash') {
                 const iframe = document.getElementById('voxeldashFrame');
                 const targetUrl = window.location.protocol + '//' + window.location.hostname + ':7867';
@@ -1097,6 +1249,134 @@ function getHtml() {
             iframe.src = targetUrl;
             showToast('🔄 Đang tải lại VoxelDash...');
         }
+
+        const COLOR_HEX = {
+            gold: '#ffab00',
+            red: '#ff5252',
+            green: '#00e676',
+            aqua: '#00d2ff',
+            yellow: '#ffff55',
+            light_purple: '#ff77ff',
+            white: '#ffffff'
+        };
+
+        function updatePreview() {
+            const titleInput = document.getElementById('announceTitle');
+            const subInput = document.getElementById('announceSubtitle');
+            const modeInput = document.getElementById('announceMode');
+            const colorInput = document.getElementById('announceColor');
+
+            const title = (titleInput ? titleInput.value.trim() : '') || '✦ SERVER NGƯỜI GẦY ✦';
+            const subtitle = (subInput ? subInput.value.trim() : '') || 'Nhập tiêu đề và phụ đề để xem trước...';
+            const mode = modeInput ? modeInput.value : 'both';
+            const color = colorInput ? colorInput.value : 'gold';
+
+            const pTitle = document.getElementById('previewTitle');
+            const pSub = document.getElementById('previewSubtitle');
+            const pAction = document.getElementById('previewActionbar');
+
+            if (pTitle) {
+                pTitle.innerText = title;
+                pTitle.style.color = COLOR_HEX[color] || '#ffab00';
+                pTitle.style.display = (mode === 'actionbar') ? 'none' : 'block';
+            }
+            if (pSub) {
+                pSub.innerText = subtitle;
+                pSub.style.display = (mode === 'actionbar') ? 'none' : 'block';
+            }
+            if (pAction) {
+                pAction.style.display = (mode === 'title') ? 'none' : 'inline-block';
+                pAction.innerText = mode === 'actionbar' ? (title + (subtitle ? ' • ' + subtitle : '')) : (subtitle ? subtitle : title);
+            }
+        }
+
+        const PRESETS = {
+            maint5: {
+                title: '⚠ BẢO TRÌ MÁY CHỦ',
+                subtitle: 'Máy chủ sẽ bảo trì sau 5 phút. Vui lòng cất đồ vào rương an toàn!',
+                mode: 'both',
+                color: 'red',
+                sound: 'bell',
+                duration: '5'
+            },
+            restart60: {
+                title: '⚡ KHỞI ĐỘNG LẠI',
+                subtitle: 'Server sẽ khởi động lại sau 60 giây để dọn RAM. Hãy đứng yên!',
+                mode: 'both',
+                color: 'gold',
+                sound: 'bell',
+                duration: '5'
+            },
+            clearlag60: {
+                title: '🧹 DỌN RÁC SAU 60s',
+                subtitle: 'Quét sạch toàn bộ vật phẩm rơi trên mặt đất. Hãy nhặt đồ rơi!',
+                mode: 'both',
+                color: 'yellow',
+                sound: 'bell',
+                duration: '5'
+            },
+            kitgift: {
+                title: '🎁 PHÁT QUÀ CỨU TRỢ',
+                subtitle: 'Gõ lệnh /kit để nhận ngay lương thực và trang bị khởi đầu!',
+                mode: 'both',
+                color: 'green',
+                sound: 'levelup',
+                duration: '5'
+            },
+            welcome: {
+                title: '👑 CHÀO MỪNG TÂN THỦ',
+                subtitle: 'Chúc bạn có những giờ phút sinh tồn thật vui vẻ tại Server!',
+                mode: 'both',
+                color: 'aqua',
+                sound: 'levelup',
+                duration: '5'
+            }
+        };
+
+        function applyPreset(presetKey) {
+            const p = PRESETS[presetKey];
+            if (!p) return;
+            document.getElementById('announceTitle').value = p.title;
+            document.getElementById('announceSubtitle').value = p.subtitle;
+            document.getElementById('announceMode').value = p.mode;
+            document.getElementById('announceColor').value = p.color;
+            document.getElementById('announceSound').value = p.sound;
+            document.getElementById('announceDuration').value = p.duration;
+            updatePreview();
+            showToast('Đã chọn mẫu: ' + p.title);
+        }
+
+        async function sendAnnouncement() {
+            const title = document.getElementById('announceTitle').value.trim();
+            const subtitle = document.getElementById('announceSubtitle').value.trim();
+            const mode = document.getElementById('announceMode').value;
+            const color = document.getElementById('announceColor').value;
+            const sound = document.getElementById('announceSound').value;
+            const duration = document.getElementById('announceDuration').value;
+
+            if (!title && !subtitle) {
+                showToast('⚠️ Vui lòng nhập tiêu đề hoặc phụ đề thông báo!', true);
+                return;
+            }
+
+            try {
+                showToast('⏳ Đang bắn thông báo vào màn hình...');
+                const res = await fetch('/api/action/send_announcement', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ title, subtitle, mode, color, sound, duration })
+                });
+                const data = await res.json();
+                if (data.success) {
+                    showToast('🎉 ' + data.message);
+                } else {
+                    showToast('❌ ' + (data.error || 'Lỗi khi gửi thông báo'), true);
+                }
+            } catch (err) {
+                showToast('❌ Lỗi kết nối: ' + err.message, true);
+            }
+        }
+
 
         async function fetchStatus() {
             try {
