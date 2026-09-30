@@ -1,0 +1,222 @@
+menu_title: '&8[&c&lDANH HIỆU NGƯỜI GẦY&8]'
+open_command:
+  - danhhieu
+  - tags
+  - tag
+size: 27
+
+items:
+  'filler':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 17
+      - 19
+      - 20
+      - 21
+      - 23
+      - 24
+      - 25
+      - 26
+    display_name: ' '
+
+  'gaychua':
+    slot: 10
+    material: GOLDEN_HELMET
+    display_name: '&c[&6Gầy Chúa&c]'
+    lore:
+      - '&7--------------------------------'
+      - '&eBậc thầy que tăm, thủ lĩnh làng Gầy.'
+      - '&fThân hình mảnh khảnh nhưng khí chất ngút ngàn!'
+      - '&7--------------------------------'
+      - '&a➤ Nhấp chuột để đeo danh hiệu này!'
+    left_click_commands:
+      - '[console] luckperms:lp user %player_name% parent remove gaychua'
+      - '[console] luckperms:lp user %player_name% parent remove xuongsuon'
+      - '[console] luckperms:lp user %player_name% parent remove giobay'
+      - '[console] luckperms:lp user %player_name% parent remove nghiennang'
+      - '[console] luckperms:lp user %player_name% parent remove ta40kg'
+      - '[console] luckperms:lp user %player_name% parent remove quetam'
+      - '[console] luckperms:lp user %player_name% parent remove khangkhiu'
+      - '[console] luckperms:lp user %player_name% parent remove dabocxuong'
+      - '[console] luckperms:lp user %player_name% parent add gaychua'
+      - '[message] &a&l[✓] &eBạn đã kích hoạt danh hiệu &c[&6Gầy Chúa&c]&e!'
+      - '[close]'
+
+  'xuongsuon':
+    slot: 11
+    material: BONE
+    display_name: '&f[&7Xương Sườn&f]'
+    lore:
+      - '&7--------------------------------'
+      - '&eĐếm không sót chiếc xương sườn nào.'
+      - '&fMỗi khi hít thở là cả một kỳ quan giải phẫu!'
+      - '&7--------------------------------'
+      - '&a➤ Nhấp chuột để đeo danh hiệu này!'
+    left_click_commands:
+      - '[console] luckperms:lp user %player_name% parent remove gaychua'
+      - '[console] luckperms:lp user %player_name% parent remove xuongsuon'
+      - '[console] luckperms:lp user %player_name% parent remove giobay'
+      - '[console] luckperms:lp user %player_name% parent remove nghiennang'
+      - '[console] luckperms:lp user %player_name% parent remove ta40kg'
+      - '[console] luckperms:lp user %player_name% parent remove quetam'
+      - '[console] luckperms:lp user %player_name% parent remove khangkhiu'
+      - '[console] luckperms:lp user %player_name% parent remove dabocxuong'
+      - '[console] luckperms:lp user %player_name% parent add xuongsuon'
+      - '[message] &a&l[✓] &eBạn đã kích hoạt danh hiệu &f[&7Xương Sườn&f]&e!'
+      - '[close]'
+
+  'giobay':
+    slot: 12
+    material: FEATHER
+    display_name: '&b[&3Gió Bay&b]'
+    lore:
+      - '&7--------------------------------'
+      - '&eChỉ cần một cơn gió hiu hiu thổi qua'
+      - '&flà đã bay lơ lửng giữa chín tầng mây!'
+      - '&7--------------------------------'
+      - '&a➤ Nhấp chuột để đeo danh hiệu này!'
+    left_click_commands:
+      - '[console] luckperms:lp user %player_name% parent remove gaychua'
+      - '[console] luckperms:lp user %player_name% parent remove xuongsuon'
+      - '[console] luckperms:lp user %player_name% parent remove giobay'
+      - '[console] luckperms:lp user %player_name% parent remove nghiennang'
+      - '[console] luckperms:lp user %player_name% parent remove ta40kg'
+      - '[console] luckperms:lp user %player_name% parent remove quetam'
+      - '[console] luckperms:lp user %player_name% parent remove khangkhiu'
+      - '[console] luckperms:lp user %player_name% parent remove dabocxuong'
+      - '[console] luckperms:lp user %player_name% parent add giobay'
+      - '[message] &a&l[✓] &eBạn đã kích hoạt danh hiệu &b[&3Gió Bay&b]&e!'
+      - '[close]'
+
+  'nghiennang':
+    slot: 13
+    material: BREWING_STAND
+    display_name: '&e[&6Nghiện Nặng&e]'
+    lore:
+      - '&7--------------------------------'
+      - '&eMắt thâm quầng, da xanh xao như tàu lá chuối.'
+      - '&fThức trắng 7 đêm cày cuốc Minecraft!'
+      - '&7--------------------------------'
+      - '&a➤ Nhấp chuột để đeo danh hiệu này!'
+    left_click_commands:
+      - '[console] luckperms:lp user %player_name% parent remove gaychua'
+      - '[console] luckperms:lp user %player_name% parent remove xuongsuon'
+      - '[console] luckperms:lp user %player_name% parent remove giobay'
+      - '[console] luckperms:lp user %player_name% parent remove nghiennang'
+      - '[console] luckperms:lp user %player_name% parent remove ta40kg'
+      - '[console] luckperms:lp user %player_name% parent remove quetam'
+      - '[console] luckperms:lp user %player_name% parent remove khangkhiu'
+      - '[console] luckperms:lp user %player_name% parent remove dabocxuong'
+      - '[console] luckperms:lp user %player_name% parent add nghiennang'
+      - '[message] &a&l[✓] &eBạn đã kích hoạt danh hiệu &e[&6Nghiện Nặng&e]&e!'
+      - '[close]'
+
+  'ta40kg':
+    slot: 14
+    material: ANVIL
+    display_name: '&a[&2Tạ 40kg&a]'
+    lore:
+      - '&7--------------------------------'
+      - '&eMục tiêu phấn đấu của cả cuộc đời:'
+      - '&fChạm mốc cân nặng 40kg không kèm ba lô!'
+      - '&7--------------------------------'
+      - '&a➤ Nhấp chuột để đeo danh hiệu này!'
+    left_click_commands:
+      - '[console] luckperms:lp user %player_name% parent remove gaychua'
+      - '[console] luckperms:lp user %player_name% parent remove xuongsuon'
+      - '[console] luckperms:lp user %player_name% parent remove giobay'
+      - '[console] luckperms:lp user %player_name% parent remove nghiennang'
+      - '[console] luckperms:lp user %player_name% parent remove ta40kg'
+      - '[console] luckperms:lp user %player_name% parent remove quetam'
+      - '[console] luckperms:lp user %player_name% parent remove khangkhiu'
+      - '[console] luckperms:lp user %player_name% parent remove dabocxuong'
+      - '[console] luckperms:lp user %player_name% parent add ta40kg'
+      - '[message] &a&l[✓] &eBạn đã kích hoạt danh hiệu &a[&2Tạ 40kg&a]&e!'
+      - '[close]'
+
+  'quetam':
+    slot: 15
+    material: STICK
+    display_name: '&e[&6Que Tăm&e]'
+    lore:
+      - '&7--------------------------------'
+      - '&eMảnh mai, dẻo dai và có thể luồn lách'
+      - '&fqua bất kỳ khe cửa hẹp nào!'
+      - '&7--------------------------------'
+      - '&a➤ Nhấp chuột để đeo danh hiệu này!'
+    left_click_commands:
+      - '[console] luckperms:lp user %player_name% parent remove gaychua'
+      - '[console] luckperms:lp user %player_name% parent remove xuongsuon'
+      - '[console] luckperms:lp user %player_name% parent remove giobay'
+      - '[console] luckperms:lp user %player_name% parent remove nghiennang'
+      - '[console] luckperms:lp user %player_name% parent remove ta40kg'
+      - '[console] luckperms:lp user %player_name% parent remove quetam'
+      - '[console] luckperms:lp user %player_name% parent remove khangkhiu'
+      - '[console] luckperms:lp user %player_name% parent remove dabocxuong'
+      - '[console] luckperms:lp user %player_name% parent add quetam'
+      - '[message] &a&l[✓] &eBạn đã kích hoạt danh hiệu &e[&6Que Tăm&e]&e!'
+      - '[close]'
+
+  'khangkhiu':
+    slot: 16
+    material: DEAD_BUSH
+    display_name: '&d[&5Khẳng Khiu&d]'
+    lore:
+      - '&7--------------------------------'
+      - '&eCặp giò dài ngoằng như cành củi khô,'
+      - '&fbước đi lảo đảo nhưng cực kỳ điệu nghệ!'
+      - '&7--------------------------------'
+      - '&a➤ Nhấp chuột để đeo danh hiệu này!'
+    left_click_commands:
+      - '[console] luckperms:lp user %player_name% parent remove gaychua'
+      - '[console] luckperms:lp user %player_name% parent remove xuongsuon'
+      - '[console] luckperms:lp user %player_name% parent remove giobay'
+      - '[console] luckperms:lp user %player_name% parent remove nghiennang'
+      - '[console] luckperms:lp user %player_name% parent remove ta40kg'
+      - '[console] luckperms:lp user %player_name% parent remove quetam'
+      - '[console] luckperms:lp user %player_name% parent remove khangkhiu'
+      - '[console] luckperms:lp user %player_name% parent remove dabocxuong'
+      - '[console] luckperms:lp user %player_name% parent add khangkhiu'
+      - '[message] &a&l[✓] &eBạn đã kích hoạt danh hiệu &d[&5Khẳng Khiu&d]&e!'
+      - '[close]'
+
+  'clear_tag':
+    slot: 22
+    material: BARRIER
+    display_name: '&c&l[GỠ BỎ TOÀN BỘ DANH HIỆU]'
+    lore:
+      - '&7--------------------------------'
+      - '&eGỡ bỏ danh hiệu đang đeo để trở về'
+      - '&7tên bình thường không kèm tiền tố.'
+      - '&7--------------------------------'
+      - '&c➤ Nhấp chuột để gỡ danh hiệu!'
+    left_click_commands:
+      - '[console] luckperms:lp user %player_name% parent remove gaychua'
+      - '[console] luckperms:lp user %player_name% parent remove xuongsuon'
+      - '[console] luckperms:lp user %player_name% parent remove giobay'
+      - '[console] luckperms:lp user %player_name% parent remove nghiennang'
+      - '[console] luckperms:lp user %player_name% parent remove ta40kg'
+      - '[console] luckperms:lp user %player_name% parent remove quetam'
+      - '[console] luckperms:lp user %player_name% parent remove khangkhiu'
+      - '[console] luckperms:lp user %player_name% parent remove dabocxuong'
+      - '[message] &e&l[!] &7Đã gỡ bỏ toàn bộ danh hiệu thành công!'
+      - '[close]'
+
+  'back':
+    slot: 18
+    material: ARROW
+    display_name: '&e&l« QUAY LẠI MENU CHÍNH'
+    lore:
+      - '&7Nhấp để quay lại Menu Tổng.'
+    left_click_commands:
+      - '[openguimenu] main_menu'

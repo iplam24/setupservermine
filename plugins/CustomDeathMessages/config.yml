@@ -1,0 +1,80 @@
+# ==============================================================================
+# 🎯 CUSTOM DEATH MESSAGES - MAIN CONFIGURATION (SERVER NGƯỜI GẦY)
+# ==============================================================================
+
+ignore-validation-errors: true
+run-initial-validation: true
+
+# Gửi tin nhắn cho toàn server/world
+message-to-victim: true
+message-to-world: true
+message-to-radius: 0
+
+# Âm thanh khi chết
+play-sound-on-death: true
+death-sound: entity.player.death
+sound-volume: 1.0
+sound-pitch: 1.0
+sound-broadcast-mode: "WORLD"
+sound-broadcast-radius: 0
+
+# Hiệu ứng nổ hạt khi chết
+play-particles-on-death: true
+death-particle: EXPLOSION
+particle-count: 35
+particle-offset-x: 0.5
+particle-offset-y: 0.5
+particle-offset-z: 0.5
+particle-extra: 0.1
+particle-broadcast-mode: "WORLD"
+particle-broadcast-radius: 0
+
+# Visual Effects
+play-title-on-death: true
+death-title: "&c&lBẠN ĐÃ BAY MÀU!"
+death-subtitle: "&7Thân hình que tăm không chịu nổi số phận..."
+
+play-actionbar-on-death: false
+death-actionbar: "&c{victim} đã gãy xương!"
+
+play-darken-screen-effect: false
+darken-effect-duration-ticks: 20
+darken-effect-particle: CLOUD
+
+effects-broadcast:
+  default-mode: "WORLD"
+  default-radius: 0
+  sound-mode: "WORLD"
+  sound-radius: 0
+  particle-mode: "WORLD"
+  particle-radius: 0
+  title-mode: "VICTIM_ONLY"
+  title-radius: 0
+  actionbar-mode: "VICTIM_ONLY"
+  actionbar-radius: 0
+  darken-effect-mode: "RADIUS"
+  darken-effect-radius: 30
+
+time-format: "HH:mm:ss"
+
+# Thông báo khi hồi sinh
+respawn-message-enabled: true
+respawn-message: "&a&l[HỒI SINH] &e{player} &7vừa được truyền 5 lít đạm đã hồi sinh trở lại!"
+
+epic-death-chance: 0.05
+cost-per-death-message: 0.0
+exempt-groups-from-cost:
+  - "admin"
+
+per-world-messages: {}
+
+# Áp dụng cho mọi nhóm người chơi
+use-permission-based-messages: false
+
+help-permissions:
+  op: "all"
+  admin: "all"
+  vip: [1, 2]
+  default: [1]
+
+legacy-color-support: false

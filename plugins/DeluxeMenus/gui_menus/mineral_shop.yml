@@ -1,0 +1,241 @@
+menu_title: '&8[&6&lCHỢ THU MUA KHOÁNG SẢN&8]'
+open_command:
+  - chokhoangsan
+  - mineralshop
+  - bankhoangsan
+size: 27
+
+items:
+  'filler':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 17
+      - 18
+      - 26
+    display_name: ' '
+
+  'sell_coal':
+    slot: 10
+    material: COAL
+    display_name: '&8&l[BÁN 1 THAN ĐÁ]'
+    lore:
+      - '&7----------------------------------'
+      - '&fGiá bán: &62 Xu &f/ 1 viên'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột để bán 1 Than đá!'
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: COAL
+          amount: 1
+      deny_commands:
+        - '[message] &c&l[!] &7Bạn không có Than Đá trong túi đồ!'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% coal 1'
+      - '[console] eco give %player_name% 2'
+      - '[message] &a&l[✓] &eĐã bán &71 Than Đá &enhận &62 Xu&e!'
+      - '[refresh]'
+
+  'sell_copper':
+    slot: 11
+    material: COPPER_INGOT
+    display_name: '&6&l[BÁN 1 THỎI ĐỒNG]'
+    lore:
+      - '&7----------------------------------'
+      - '&fGiá bán: &65 Xu &f/ 1 thỏi'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột để bán 1 Thỏi Đồng!'
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: COPPER_INGOT
+          amount: 1
+      deny_commands:
+        - '[message] &c&l[!] &7Bạn không có Thỏi Đồng trong túi đồ!'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% copper_ingot 1'
+      - '[console] eco give %player_name% 5'
+      - '[message] &a&l[✓] &eĐã bán &61 Thỏi Đồng &enhận &65 Xu&e!'
+      - '[refresh]'
+
+  'sell_iron':
+    slot: 12
+    material: IRON_INGOT
+    display_name: '&f&l[BÁN 1 THỎI SẮT]'
+    lore:
+      - '&7----------------------------------'
+      - '&fGiá bán: &610 Xu &f/ 1 thỏi'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột để bán 1 Thỏi Sắt!'
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: IRON_INGOT
+          amount: 1
+      deny_commands:
+        - '[message] &c&l[!] &7Bạn không có Thỏi Sắt trong túi đồ!'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% iron_ingot 1'
+      - '[console] eco give %player_name% 10'
+      - '[message] &a&l[✓] &eĐã bán &f1 Thỏi Sắt &enhận &610 Xu&e!'
+      - '[refresh]'
+
+  'sell_gold':
+    slot: 13
+    material: GOLD_INGOT
+    display_name: '&e&l[BÁN 1 THỎI VÀNG]'
+    lore:
+      - '&7----------------------------------'
+      - '&fGiá bán: &625 Xu &f/ 1 thỏi'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột để bán 1 Thỏi Vàng!'
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: GOLD_INGOT
+          amount: 1
+      deny_commands:
+        - '[message] &c&l[!] &7Bạn không có Thỏi Vàng trong túi đồ!'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% gold_ingot 1'
+      - '[console] eco give %player_name% 25'
+      - '[message] &a&l[✓] &eĐã bán &e1 Thỏi Vàng &enhận &625 Xu&e!'
+      - '[refresh]'
+
+  'sell_lapis':
+    slot: 14
+    material: LAPIS_LAZULI
+    display_name: '&9&l[BÁN 1 LAPIS LAZULI]'
+    lore:
+      - '&7----------------------------------'
+      - '&fGiá bán: &63 Xu &f/ 1 viên'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột để bán 1 Lapis!'
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: LAPIS_LAZULI
+          amount: 1
+      deny_commands:
+        - '[message] &c&l[!] &7Bạn không có Lapis Lazuli trong túi đồ!'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% lapis_lazuli 1'
+      - '[console] eco give %player_name% 3'
+      - '[message] &a&l[✓] &eĐã bán &91 Lapis Lazuli &enhận &63 Xu&e!'
+      - '[refresh]'
+
+  'sell_emerald':
+    slot: 15
+    material: EMERALD
+    display_name: '&a&l[BÁN 1 NGỌC LỤC BẢO]'
+    lore:
+      - '&7----------------------------------'
+      - '&fGiá bán: &650 Xu &f/ 1 viên'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột để bán 1 Ngọc Lục Bảo!'
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: EMERALD
+          amount: 1
+      deny_commands:
+        - '[message] &c&l[!] &7Bạn không có Ngọc Lục Bảo trong túi đồ!'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% emerald 1'
+      - '[console] eco give %player_name% 50'
+      - '[message] &a&l[✓] &eĐã bán &a1 Ngọc Lục Bảo &enhận &650 Xu&e!'
+      - '[refresh]'
+
+  'sell_diamond':
+    slot: 16
+    material: DIAMOND
+    display_name: '&b&l[BÁN 1 KIM CƯƠNG]'
+    lore:
+      - '&7----------------------------------'
+      - '&fGiá bán: &6100 Xu &f/ 1 viên'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột để bán 1 Kim Cương!'
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: DIAMOND
+          amount: 1
+      deny_commands:
+        - '[message] &c&l[!] &7Bạn không có Kim Cương trong túi đồ!'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% diamond 1'
+      - '[console] eco give %player_name% 100'
+      - '[message] &a&l[✓] &eĐã bán &b1 Kim Cương &enhận &6100 Xu&e!'
+      - '[refresh]'
+
+  'sell_netherite':
+    slot: 21
+    material: NETHERITE_SCRAP
+    display_name: '&4&l[BÁN 1 MẢNH NETHERITE]'
+    lore:
+      - '&7----------------------------------'
+      - '&fGiá bán: &6500 Xu &f/ 1 mảnh'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột để bán 1 Mảnh Netherite!'
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: NETHERITE_SCRAP
+          amount: 1
+      deny_commands:
+        - '[message] &c&l[!] &7Bạn không có Mảnh Netherite trong túi đồ!'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% netherite_scrap 1'
+      - '[console] eco give %player_name% 500'
+      - '[message] &a&l[✓] &eĐã bán &41 Mảnh Netherite &enhận &6500 Xu&e!'
+      - '[refresh]'
+
+  'sell_diamond_block':
+    slot: 23
+    material: DIAMOND_BLOCK
+    display_name: '&b&l[BÁN 1 KHỐI KIM CƯƠNG]'
+    lore:
+      - '&7----------------------------------'
+      - '&fGiá bán: &6900 Xu &f/ 1 khối (9 viên)'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột để bán 1 Khối Kim Cương!'
+    left_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: DIAMOND_BLOCK
+          amount: 1
+      deny_commands:
+        - '[message] &c&l[!] &7Bạn không có Khối Kim Cương trong túi đồ!'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% diamond_block 1'
+      - '[console] eco give %player_name% 900'
+      - '[message] &a&l[✓] &eĐã bán &b1 Khối Kim Cương &enhận &6900 Xu&e!'
+      - '[refresh]'
+
+  'back':
+    slot: 22
+    material: ARROW
+    display_name: '&e&l« QUAY LẠI MENU CHÍNH'
+    lore:
+      - '&7Nhấp để quay lại Menu Tổng.'
+    left_click_commands:
+      - '[openguimenu] main_menu'

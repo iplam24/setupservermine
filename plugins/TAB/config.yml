@@ -1,0 +1,88 @@
+# TAB Configuration for Server Của Những Người Gầy
+header-footer:
+  enabled: true
+  designs:
+    default:
+      header:
+        - "<#FFFFFF>&m                                                </#FFFF00>"
+        - "&c&l⚡ &6&lSERVER CỦA NHỮNG NGƯỜI GẦY &c&l⚡"
+        - "&r&7&l>> &eChào que tăm &b&l%player% &eđã vào làng Gầy! &7&l<<"
+        - "&r&7Online: &a%online%&7/&c%maxplayers%  &7•  Ping: &a%ping%ms"
+        - ""
+      footer:
+        - ""
+        - "&e⚔ Dùng lệnh &b/danhhieu &ahoặc dùng Menu để đổi danh hiệu ⚔"
+        - "&6Địa chỉ IP: &bmc.lamndvn.id.vn &7| &aWeb Quản Trị: &bweb.lamndvn.id.vn"
+        - "<#FFFFFF>&m                                                </#FFFF00>"
+
+tablist-name-formatting:
+  enabled: true
+  disable-condition: '%world%=disabledworld'
+
+# Tính năng hiển thị chữ bay trên đầu người chơi (Nametag 3D trên đầu)
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  sorting-types:
+    - "GROUPS:gaychua,xuongsuon,giobay,nghiennang,ta40kg,quetam,khangkhiu,dabocxuong,default"
+    - "PLACEHOLDER_A_TO_Z:%player%"
+  case-sensitive-sorting: true
+  can-see-friendly-invisibles: false
+  disable-condition: '%world%=disabledworld'
+
+playerlist-objective:
+  enabled: true
+  value: "%ping%"
+  fancy-value: "&7Ping: %ping%"
+  title: "TAB"
+  render-type: INTEGER
+  disable-condition: '%world%=disabledworld'
+
+belowname-objective:
+  enabled: false
+
+prevent-spectator-effect:
+  enabled: false
+
+bossbar:
+  enabled: false
+
+scoreboard:
+  enabled: false
+
+layout:
+  enabled: false
+
+placeholders:
+  date-format: "dd.MM.yyyy"
+  time-format: "HH:mm:ss"
+  time-offset: 7
+
+placeholderapi-refresh-intervals:
+  default-refresh-interval: 500
+  server:
+    "%server_uptime%": 1000
+    "%server_tps_1_cleaned%": 1000
+  player:
+    "%player_health%": 200
+    "%player_ping%": 1000
+    "%vault_prefix%": 1000
+
+assign-groups-by-permissions: false
+primary-group-finding-list:
+  - gaychua
+  - xuongsuon
+  - giobay
+  - nghiennang
+  - ta40kg
+  - quetam
+  - khangkhiu
+  - dabocxuong
+  - default
+
+permission-refresh-interval: 1000
+
+conditions: {}
+
+debug: false

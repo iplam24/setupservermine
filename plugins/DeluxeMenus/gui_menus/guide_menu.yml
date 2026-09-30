@@ -1,0 +1,179 @@
+menu_title: '&8[&9&l✦ CẨM NANG SINH TỒN & PHÍM TẮT ✦&8]'
+open_command:
+  - huongdan
+  - hd
+  - guide
+  - trogiup
+size: 36
+
+items:
+  'filler':
+    material: BLUE_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 17
+      - 18
+      - 26
+      - 27
+      - 28
+      - 29
+      - 30
+      - 32
+      - 33
+      - 34
+      - 35
+    display_name: ' '
+
+  'hotkeys_guide':
+    slot: 10
+    material: COMPASS
+    display_name: '&e&l⌨ [PHÍM TẮT & THAO TÁC NHANH]'
+    lore:
+      - '&7----------------------------------'
+      - '&61. Mở Menu Tổng:'
+      - '&f   Cầm Ngôi sao (Ô số 9) &bNhấp Chuột Phải'
+      - '&f   hoặc gõ: &e/menu'
+      - ''
+      - '&62. Đổi đồ với bạn bè:'
+      - '&f   &bGiữ Shift + Nhấp Chuột Phải &fvào bạn đó'
+      - '&f   hoặc gõ: &e/trade <tên>'
+      - ''
+      - '&63. Cõng nhau / Nhảy lên cổ:'
+      - '&f   Để tay trống + &bNhấp Chuột Phải &fvào đầu bạn bè'
+      - ''
+      - '&64. Ngồi xuống ghế / bậc thang:'
+      - '&f   &bNhấp Chuột Phải &fvào Cầu Thang / Thảm'
+      - ''
+      - '&65. Đứng dậy / Thoát tư thế:'
+      - '&f   Nhấn phím &bShift &f(Cúi người)'
+      - ''
+      - '&66. Mở Bản đồ Thế giới:'
+      - '&f   Nhấn phím &bM &f(hoặc &bJ&f)'
+      - '&7----------------------------------'
+
+  'trade_guide':
+    slot: 12
+    material: CHEST
+    display_name: '&6&l🤝 [HỆ THỐNG GIAO DỊCH ĐỔI ĐỒ]'
+    lore:
+      - '&7----------------------------------'
+      - '&eServer không dùng tiền ảo, 100% đổi đồ!'
+      - ''
+      - '&a• Đổi đồ 2 người (P2P Trade):'
+      - '&f  Tiến lại gần bạn bè ➔ &bShift + Chuột Phải'
+      - '&f  Bảng chia đôi hiện ra: Kéo đồ vào rồi'
+      - '&f  cùng bấm &a[SẴN SÀNG] &fđể hoán đổi đồ.'
+      - ''
+      - '&a• Tiệm Tạp Hóa Máy Chủ (/shop, /doido):'
+      - '&f  Dùng Sắt, Than, Vàng, Kim Cương trong túi'
+      - '&f  để đổi lấy Phở bò, Táo vàng, Totem, Sách phép.'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp để mở Tiệm Đổi Đồ!'
+    left_click_commands:
+      - '[openguimenu] barter_shop'
+
+  'tags_guide':
+    slot: 14
+    material: NAME_TAG
+    display_name: '&d&l👑 [DANH HIỆU CHỮ BAY 3D]'
+    lore:
+      - '&7----------------------------------'
+      - '&fTrang bị danh hiệu hài hước trên đầu:'
+      - '&e• [Gầy Chúa], [Xương Sườn], [Gió Bay]...'
+      - '&fChữ nổi 3D bay trên đầu ai cũng nhìn thấy!'
+      - ''
+      - '&a➤ Cách đổi danh hiệu:'
+      - '&f  Gõ lệnh: &e/tags &fhoặc &e/danhhieu'
+      - '&f  sau đó bấm chuột vào danh hiệu muốn đeo.'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp để mở Bảng Danh Hiệu!'
+    left_click_commands:
+      - '[openguimenu] tags_menu'
+
+  'kit_guide':
+    slot: 16
+    material: BREAD
+    display_name: '&a&l🎁 [QUÀ CỨU TRỢ KHỞI ĐẦU]'
+    lore:
+      - '&7----------------------------------'
+      - '&fGói cứu trợ bồi bổ cho người mới vào:'
+      - '&e• 32 Bát Phở Bò Béo Ngậy'
+      - '&e• Mũ Bảo Hiểm Chống Gió Thổi'
+      - '&e• Gậy Cân Nặng (Đẩy lùi quái bay xa)'
+      - ''
+      - '&a➤ Lệnh nhận quà: &e/kit nguoigay'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp để nhận quà ngay!'
+    left_click_commands:
+      - '[player] kit nguoigay'
+      - '[close]'
+
+  'teleport_guide':
+    slot: 20
+    material: RECOVERY_COMPASS
+    display_name: '&b&l📍 [DỊCH CHUYỂN & KẾT BẠN]'
+    lore:
+      - '&7----------------------------------'
+      - '&fCác lệnh dịch chuyển cơ bản:'
+      - '&e• &b/tpa <tên> &7- Xin dịch chuyển tới bạn bè'
+      - '&e• &b/tpaccept &7- Đồng ý yêu cầu dịch chuyển'
+      - '&e• &b/spawn &7- Dịch chuyển về Làng Khởi Đầu'
+      - ''
+      - '&fTrụ Dịch Chuyển (Waystone):'
+      - '&fChuột phải vào cột đá Waystone để kích hoạt,'
+      - '&fgiúp dịch chuyển tức thì giữa các căn cứ!'
+      - '&7----------------------------------'
+
+  'actions_guide':
+    slot: 22
+    material: OAK_STAIRS
+    display_name: '&d&l💺 [HÀNH ĐỘNG HÀI HƯỚC]'
+    lore:
+      - '&7----------------------------------'
+      - '&fThực hiện các tư thế bựa trong server:'
+      - '&e• &b/sit &7- Ngồi bệt xuống đất'
+      - '&e• &b/lay &7- Nằm phơi bộ xương sườn'
+      - '&e• &b/spin &7- Xoay chong chóng 360 độ'
+      - '&e• &b/crawl &7- Trườn bò chui hầm 1 ô'
+      - '&e• &b/bellyflop &7- Úp mặt xuống đất'
+      - ''
+      - '&a➤ Lệnh mở menu hành động: &e/hanhdong'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp để mở Menu Hành Động!'
+    left_click_commands:
+      - '[openguimenu] actions_menu'
+
+  'trash_guide':
+    slot: 24
+    material: LAVA_BUCKET
+    display_name: '&c&l🗑️ [THÙNG RÁC HỦY ĐỒ]'
+    lore:
+      - '&7----------------------------------'
+      - '&fĐào mỏ nhiều đất đá làm chật túi đồ?'
+      - '&e• Gõ lệnh: &b/trash &ehoặc &b/disposal'
+      - '&fMột hòm rác tạm thời sẽ mở ra.'
+      - '&fBỏ đồ không dùng vào đó rồi đóng hòm lại,'
+      - '&frác sẽ tự động biến mất vĩnh viễn!'
+      - '&7----------------------------------'
+      - '&c➤ Nhấp để mở Thùng Rác ngay!'
+    left_click_commands:
+      - '[player] disposal'
+      - '[close]'
+
+  'back_btn':
+    slot: 31
+    material: ARROW
+    display_name: '&e&l« QUAY LẠI MENU CHÍNH'
+    lore:
+      - '&7Nhấp để quay lại Menu Tổng.'
+    left_click_commands:
+      - '[openguimenu] main_menu'

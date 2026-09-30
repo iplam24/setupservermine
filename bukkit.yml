@@ -14,7 +14,7 @@ settings:
     allow-old-keys-in-registry: false
     enum-compatibility-mode: false
 spawn-limits:
-  monsters: 70
+  monsters: 45
   animals: 10
   water-animals: 5
   water-ambient: 20
@@ -31,5 +31,5 @@ ticks-per:
   water-underground-creature-spawns: 1
   axolotl-spawns: 1
   ambient-spawns: 1
-  autosave: 6000
+  autosave: 1200
 aliases: now-in-commands.yml

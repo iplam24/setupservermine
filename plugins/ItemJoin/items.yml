@@ -1,0 +1,25 @@
+# ItemJoin Custom Item Configurations - Server Của Những Người Gầy
+items-Version: 8
+
+items-Delay: 2
+items-Overwrite: false
+items-Spamming: false
+items-RestrictCount: false
+
+items:
+  menu-item:
+    id: NETHER_STAR
+    slot: 8
+    name: '&6&l✦ MENU NGƯỜI GẦY ✦ &e(Chuột Phải)'
+    lore:
+      - '&7----------------------------------'
+      - '&eCầm vật phẩm này và &b&lNhấp Chuột Phải'
+      - '&eđể mở &6&lBảng Danh Hiệu & Tiện Ích&e!'
+      - '&fHoàn toàn trực quan, không cần gõ lệnh!'
+      - '&7----------------------------------'
+    interact:
+      - 'player: menu'
+    commands-sound: BLOCK.NOTE_BLOCK.PLING
+    itemflags: unbreakable, hide-flags
+    triggers: join, respawn
+    enabled-worlds: ALL

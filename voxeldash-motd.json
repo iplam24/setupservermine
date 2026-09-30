@@ -46,8 +46,8 @@
       "obfuscated" : false,
       "hexColor" : false
     }, {
-      "text" : "TRÙM MINECRAFT ",
-      "color" : "gold",
+      "text" : "SERVER CỦA NHỮNG NGƯỜI GẦY ",
+      "color" : "yellow",
       "bold" : true,
       "italic" : false,
       "underlined" : false,
@@ -102,7 +102,7 @@
       "obfuscated" : false,
       "hexColor" : false
     }, {
-      "text" : "SERVER CỦA NHỮNG NGƯỜI ",
+      "text" : "GẦY NHƯNG CHƠI LẦY ",
       "color" : "aqua",
       "bold" : true,
       "italic" : false,
@@ -120,8 +120,8 @@
       "obfuscated" : false,
       "hexColor" : false
     }, {
-      "text" : " GẦY ",
-      "color" : "yellow",
+      "text" : " GIÓ THỔI LÀ BAY ",
+      "color" : "light_purple",
       "bold" : true,
       "italic" : false,
       "underlined" : false,

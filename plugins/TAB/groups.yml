@@ -1,0 +1,42 @@
+# Groups configuration for TAB
+# tagprefix: Chữ hiển thị nổi trên đầu người chơi (Nametag 3D trên đầu)
+# tabprefix: Chữ hiển thị trong bảng TAB danh sách người chơi
+
+_DEFAULT_:
+  tabprefix: "%luckperms-prefix%"
+  tagprefix: "%luckperms-prefix%"
+  customtabname: "%player%"
+  tabsuffix: "%luckperms-suffix%"
+  tagsuffix: "%luckperms-suffix%"
+
+gaychua:
+  tabprefix: "&c[&6Gầy Chúa&c] "
+  tagprefix: "&c[&6Gầy Chúa&c] "
+
+xuongsuon:
+  tabprefix: "&f[&7Xương Sườn&f] "
+  tagprefix: "&f[&7Xương Sườn&f] "
+
+giobay:
+  tabprefix: "&b[&3Gió Bay&b] "
+  tagprefix: "&b[&3Gió Bay&b] "
+
+nghiennang:
+  tabprefix: "&e[&6Nghiện Nặng&e] "
+  tagprefix: "&e[&6Nghiện Nặng&e] "
+
+ta40kg:
+  tabprefix: "&a[&2Tạ 40kg&a] "
+  tagprefix: "&a[&2Tạ 40kg&a] "
+
+quetam:
+  tabprefix: "&e[&6Que Tăm&e] "
+  tagprefix: "&e[&6Que Tăm&e] "
+
+khangkhiu:
+  tabprefix: "&d[&5Khẳng Khiu&d] "
+  tagprefix: "&d[&5Khẳng Khiu&d] "
+
+dabocxuong:
+  tabprefix: "&7[&8Da Bọc Xương&7] "
+  tagprefix: "&7[&8Da Bọc Xương&7] "

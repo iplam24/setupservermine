@@ -1,0 +1,143 @@
+menu_title: '&8[&c&l✦ SERVER NGƯỜI GẦY • MENU CHÍNH ✦&8]'
+open_command:
+  - menu
+  - hub
+  - helpmenu
+size: 36
+
+items:
+  'filler':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 17
+      - 18
+      - 26
+      - 27
+      - 35
+    display_name: ' '
+
+  'tags_btn':
+    slot: 10
+    material: GOLDEN_HELMET
+    display_name: '&e&l👑 [DANH HIỆU NGƯỜI GẦY]'
+    lore:
+      - '&7----------------------------------'
+      - '&fChọn danh hiệu độc lạ hài hước:'
+      - '&e• [Gầy Chúa], [Xương Sườn], [Gió Bay]...'
+      - '&a• Hiển thị chữ bay 3D trên đầu!'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột để mở bảng Danh Hiệu!'
+    left_click_commands:
+      - '[openguimenu] tags_menu'
+
+  'actions_btn':
+    slot: 12
+    material: OAK_STAIRS
+    display_name: '&a&l💺 [HÀNH ĐỘNG HÀI HƯỚC]'
+    lore:
+      - '&7----------------------------------'
+      - '&fThực hiện các tư thế siêu bựa:'
+      - '&b• Ngồi bệt, Nằm phơi xương'
+      - '&b• Xoay chong chóng, Trườn bò que tăm'
+      - '&b• Bí kíp cõng / nhảy lên cổ bạn bè!'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột để mở Menu Hành Động!'
+    left_click_commands:
+      - '[openguimenu] actions_menu'
+
+  'trade_btn':
+    slot: 14
+    material: CHEST
+    display_name: '&6&l🤝 [ĐỔI ĐỒ TRỰC TIẾP VỚI BẠN BÈ]'
+    lore:
+      - '&7----------------------------------'
+      - '&fHệ thống đổi đồ người với người:'
+      - '&a• KHÔNG CẦN TIỀN ẢO, 100% ĐỔI VẬT PHẨM!'
+      - '&f• Bạn vứt đồ của bạn, đối phương vứt đồ của họ'
+      - '&f• Cả 2 cùng ấn Sẵn Sàng là đồ tự động đổi.'
+      - '&7----------------------------------'
+      - '&e➤ Cách dùng nhanh:'
+      - '&b  Cúi người (Shift) + Chuột phải &fvào bạn bè'
+      - '&f  hoặc gõ: &e/trade <tên_bạn>'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp để xem mẹo giao dịch an toàn!'
+    left_click_commands:
+      - '[message] &a&l[GIAO DỊCH] &fĐể đổi đồ: Hãy lại gần bạn bè, &bGiữ Shift + Nhấp Chuột Phải &fvào họ (hoặc gõ &e/trade <tên>&f)!'
+      - '[close]'
+
+  'barter_btn':
+    slot: 16
+    material: EMERALD
+    display_name: '&2&l🛒 [TIỆM TẠP HÓA ĐỔI ĐỒ MÁY CHỦ]'
+    lore:
+      - '&7----------------------------------'
+      - '&fDùng vật phẩm sinh tồn đổi lấy đồ xịn:'
+      - '&e• Dùng Sắt đổi Phở Bò Béo Ngậy, Táo Vàng'
+      - '&e• Dùng Than đổi Đèn Lồng, Đuốc'
+      - '&e• Dùng Kim Cương đổi Totem, Sách Sắc Bén...'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột để vào Tiệm Đổi Đồ!'
+    left_click_commands:
+      - '[openguimenu] barter_shop'
+
+  'guide_btn':
+    slot: 28
+    material: BOOK
+    display_name: '&9&l📖 [CẨM NANG HƯỚNG DẪN & PHÍM TẮT]'
+    lore:
+      - '&7----------------------------------'
+      - '&fTra cứu toàn bộ phím tắt & tính năng:'
+      - '&e• Phím tắt đổi đồ, cõng nhau, ngồi ghế'
+      - '&e• Lệnh dịch chuyển, nhận quà, thùng rác'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp để mở Cẩm Nang Hướng Dẫn (/huongdan)!'
+    left_click_commands:
+      - '[openguimenu] guide_menu'
+
+  'kit_btn':
+    slot: 30
+    material: BREAD
+    display_name: '&d&l🎁 [CỨU TRỢ QUE TĂM]'
+    lore:
+      - '&7----------------------------------'
+      - '&fGói cứu trợ bồi bổ cho người gầy:'
+      - '&e• 32 Bát Phở Bò Béo Ngậy'
+      - '&e• Mũ Bảo Hiểm Chống Gió Thổi'
+      - '&e• Gậy Cân Nặng (Đẩy lùi quái)'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp để nhận quà khởi đầu!'
+    left_click_commands:
+      - '[player] kit nguoigay'
+      - '[close]'
+
+  'trash_btn':
+    slot: 32
+    material: LAVA_BUCKET
+    display_name: '&c&l🗑️ [THÙNG RÁC HỦY ĐỒ THỪA]'
+    lore:
+      - '&7----------------------------------'
+      - '&fVứt bỏ đất đá rác rưởi làm chật túi đồ.'
+      - '&7----------------------------------'
+      - '&c➤ Nhấp để mở Thùng Rác (/trash)!'
+    left_click_commands:
+      - '[player] disposal'
+      - '[close]'
+
+  'close_btn':
+    slot: 34
+    material: BARRIER
+    display_name: '&c&l[ĐÓNG MENU]'
+    lore:
+      - '&7Nhấp để đóng giao diện.'
+    left_click_commands:
+      - '[close]'

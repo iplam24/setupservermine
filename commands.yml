@@ -2,8 +2,32 @@ command-block-overrides: []
 ignore-vanilla-permissions: false
 aliases:
   icanhasbukkit:
-  - version $1-
+    - version $1-
   luat:
-  - rules $1-
+    - rules $1-
   noiquy:
-  - rules $1-
+    - rules $1-
+  huongdan:
+    - dm open guide_menu $1-
+  hd:
+    - dm open guide_menu $1-
+  guide:
+    - dm open guide_menu $1-
+  market:
+    - dm open barter_shop $1-
+  choden:
+    - dm open barter_shop $1-
+  shop:
+    - dm open barter_shop $1-
+  cho:
+    - dm open barter_shop $1-
+  doido:
+    - dm open barter_shop $1-
+  taphoa:
+    - dm open barter_shop $1-
+  barter:
+    - dm open barter_shop $1-
+  hanhdong:
+    - dm open actions_menu $1-
+  actions:
+    - dm open actions_menu $1-

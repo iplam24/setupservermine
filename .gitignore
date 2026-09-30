@@ -24,3 +24,4 @@ mods_disabled/
 session.lock
 world/**/session.lock
 client_mods.zip
+ITCOMSERVER.tar

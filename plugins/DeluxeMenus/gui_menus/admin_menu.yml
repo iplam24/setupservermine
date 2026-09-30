@@ -1,7 +1,6 @@
 ﻿menu_title: '&8&l⚙ &c&lBẢNG ĐIỀU KHIỂN QUẢN TRỊ VIÊN'
 open_command:
   - admin
-  - menu
   - serverpanel
 size: 54
 items:

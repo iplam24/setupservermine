@@ -17,3 +17,13 @@ gui_menus:
     file: advanced_menu.yml
   requirements_menu:
     file: requirements_menu.yml
+  tags_menu:
+    file: tags_menu.yml
+  main_menu:
+    file: main_menu.yml
+  actions_menu:
+    file: actions_menu.yml
+  barter_shop:
+    file: barter_shop.yml
+  guide_menu:
+    file: guide_menu.yml

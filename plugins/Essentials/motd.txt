@@ -1,5 +1,5 @@
 &8&m-----------------------------------------------------
-&c&l⚡ &6&lTRÙM MINECRAFT &c&l⚡ &e» &b&lHỆ THỐNG MÁY CHỦ SURVIVAL
+&c&l✦ &6&lSERVER NGƯỜI GẦY &c&l✦ &e» &b&lHỆ THỐNG MÁY CHỦ SURVIVAL
 &7Chào mừng người chơi &e&l{PLAYER} &7đã tham gia máy chủ!
 &8&m-----------------------------------------------------
 &a&l📜 NỘI QUY MÁY CHỦ (BẮT BUỘC TUÂN THỦ):
@@ -9,5 +9,6 @@
 &c4. &fKhông chửi thề, lăng mạ, xúc phạm hoặc spam chat.
 &c5. &fTôn trọng quyết định của &6&lBan Quản Trị (Admin)&f.
 &8&m-----------------------------------------------------
-&e💡 &fGõ &b/rules &fđể xem lại luật • Người chơi online: &a{ONLINE}&7/&a{MAXPLAYERS}
+&e💡 &fGõ &b/huongdan &fhoặc &b/menu &fđể xem cẩm nang phím tắt & đổi đồ!
+&e💡 &fNgười chơi online: &a{ONLINE}&7/&a{MAX} &7• &fGõ &b/rules &fđể xem lại luật
 &8&m-----------------------------------------------------

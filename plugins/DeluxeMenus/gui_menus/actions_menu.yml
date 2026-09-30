@@ -1,0 +1,144 @@
+menu_title: '&8[&6&lHÀNH ĐỘNG HÀI HƯỚC NGƯỜI GẦY&8]'
+open_command:
+  - hanhdong
+  - actions
+  - gsitmenu
+size: 27
+
+items:
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 23
+      - 24
+      - 25
+      - 26
+    display_name: ' '
+
+  'sit':
+    slot: 10
+    material: OAK_STAIRS
+    display_name: '&a&l[NGỒI BỆT NGHỈ NGƠI]'
+    lore:
+      - '&7----------------------------------'
+      - '&eChân tay khẳng khiu đi bộ mỏi quá!'
+      - '&fNgồi bệt xuống đất nghỉ ngơi dưỡng sức.'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp để ngồi bệt ngay!'
+      - '&7(Nhấn Shift để đứng dậy)'
+    left_click_commands:
+      - '[player] sit'
+      - '[close]'
+
+  'lay':
+    slot: 11
+    material: BONE
+    display_name: '&f&l[NẰM PHƠI XƯƠNG]'
+    lore:
+      - '&7----------------------------------'
+      - '&eNằm ngửa giữa thanh thiên bạch nhật.'
+      - '&fPhơi bộ xương sườn cho ánh nắng sưởi ấm!'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp để nằm phơi xương!'
+      - '&7(Nhấn Shift để đứng dậy)'
+    left_click_commands:
+      - '[player] lay'
+      - '[close]'
+
+  'spin':
+    slot: 12
+    material: FEATHER
+    display_name: '&b&l[XOAY CHONG CHÓNG]'
+    lore:
+      - '&7----------------------------------'
+      - '&eThân hình nhẹ cân tựa lông hồng.'
+      - '&fGặp gió là tự động xoay tít mù 360 độ!'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp để xoay chong chóng!'
+      - '&7(Nhấn Shift để dừng lại)'
+    left_click_commands:
+      - '[player] spin'
+      - '[close]'
+
+  'crawl':
+    slot: 13
+    material: SLIME_BALL
+    display_name: '&e&l[TRƯỜN BÒ QUE TĂM]'
+    lore:
+      - '&7----------------------------------'
+      - '&eGầy trơ xương nên có thể luồn lách'
+      - '&fchui qua khe hẹp chỉ cao vỏn vẹn 1 ô!'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp để trườn bò!'
+      - '&7(Nhấn Shift để đứng dậy)'
+    left_click_commands:
+      - '[player] crawl'
+      - '[close]'
+
+  'bellyflop':
+    slot: 14
+    material: WATER_BUCKET
+    display_name: '&c&l[ÚP MẶT VÀO SÔNG QUÊ]'
+    lore:
+      - '&7----------------------------------'
+      - '&eVấp phải cọng rơm ngã sấp mặt!'
+      - '&fNằm úp bụng xuống đất chịu trận.'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp để ngã sấp mặt!'
+      - '&7(Nhấn Shift để đứng dậy)'
+    left_click_commands:
+      - '[player] bellyflop'
+      - '[close]'
+
+  'piggyback_guide':
+    slot: 15
+    material: LEAD
+    display_name: '&6&l[CÕNG NHAU / NGỒI LÊN CỔ]'
+    lore:
+      - '&7----------------------------------'
+      - '&eBạn muốn cõng hoặc nhảy lên cổ bạn bè?'
+      - '&a➤ Cực dễ: Không cần gõ lệnh!'
+      - '&fChỉ cần để tay trống và &bNhấp Chuột Phải'
+      - '&fvào đầu bạn bè là nhảy tót lên cổ họ!'
+      - '&eNhiều người có thể chồng lên nhau'
+      - '&ftạo thành tháp người que tăm cao chót vót!'
+      - '&7----------------------------------'
+      - '&c(Nhấn Shift để nhảy xuống)'
+
+  'stand_up':
+    slot: 16
+    material: BARRIER
+    display_name: '&c&l[ĐỨNG DẬY / RỜI TƯ THẾ]'
+    lore:
+      - '&7----------------------------------'
+      - '&7Nhấp để đứng dậy trở lại trạng thái'
+      - '&7di chuyển bình thường.'
+      - '&7----------------------------------'
+      - '&c➤ Nhấp để đứng dậy!'
+    left_click_commands:
+      - '[player] gsit'
+      - '[close]'
+
+  'back':
+    slot: 22
+    material: ARROW
+    display_name: '&e&l« QUAY LẠI MENU CHÍNH'
+    lore:
+      - '&7Nhấp để quay lại Menu Tổng.'
+    left_click_commands:
+      - '[openguimenu] main_menu'

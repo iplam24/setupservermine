@@ -1,0 +1,308 @@
+menu_title: '&8[&2&lTIỆM ĐỔI ĐỒ BẰNG VẬT PHẨM&8]'
+open_command:
+  - barter
+  - doido
+  - taphoa
+  - chokhoangsan
+  - mineralshop
+  - bankhoangsan
+size: 36
+
+items:
+  'border':
+    material: GREEN_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 17
+      - 18
+      - 26
+      - 27
+      - 28
+      - 29
+      - 30
+      - 32
+      - 33
+      - 34
+      - 35
+    display_name: ' '
+
+  'phobo':
+    slot: 10
+    material: BREAD
+    display_name: '&e&l[8 BÁT PHỞ BÒ BÉO NGẬY]'
+    lore:
+      - '&7----------------------------------'
+      - '&fMón ăn bồi bổ cứu tinh cho người gầy!'
+      - '&7----------------------------------'
+      - '&6Chi phí đổi: &f2 Thỏi Sắt &7(Trong túi)'
+      - '&aNhận được: &e8 Bánh Mì Bổ Dưỡng'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột trái để đổi ngay!'
+    left_click_requirement:
+      requirements:
+        has_iron:
+          type: has item
+          material: IRON_INGOT
+          amount: 2
+      deny_commands:
+        - '[message] &c&l[!] &cBạn không có đủ 2 Thỏi Sắt trong túi để đổi!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:iron_ingot 2'
+      - '[console] minecraft:give %player_name% minecraft:bread 8'
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[message] &a&l[TRAO ĐỔI] &fBạn đã dùng &e2 Thỏi Sắt &fđổi lấy &b8 Bát Phở Bò Béo Ngậy&f!'
+
+  'golden_apple':
+    slot: 11
+    material: GOLDEN_APPLE
+    display_name: '&6&l[2 TÁO VÀNG HỒI SINH]'
+    lore:
+      - '&7----------------------------------'
+      - '&fCấp tốc hồi phục sinh lực khi gặp nguy!'
+      - '&7----------------------------------'
+      - '&6Chi phí đổi: &f4 Thỏi Sắt &7(Trong túi)'
+      - '&aNhận được: &62 Quả Táo Vàng'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột trái để đổi ngay!'
+    left_click_requirement:
+      requirements:
+        has_iron:
+          type: has item
+          material: IRON_INGOT
+          amount: 4
+      deny_commands:
+        - '[message] &c&l[!] &cBạn không có đủ 4 Thỏi Sắt trong túi để đổi!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:iron_ingot 4'
+      - '[console] minecraft:give %player_name% minecraft:golden_apple 2'
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[message] &a&l[TRAO ĐỔI] &fBạn đã dùng &e4 Thỏi Sắt &fđổi lấy &62 Táo Vàng Hồi Sinh&f!'
+
+  'lantern_pack':
+    slot: 12
+    material: LANTERN
+    display_name: '&e&l[GÓI ÁNH SÁNG SOI ĐÊM]'
+    lore:
+      - '&7----------------------------------'
+      - '&fSoi sáng hang tối, bảo vệ bạn khỏi quái.'
+      - '&7----------------------------------'
+      - '&6Chi phí đổi: &f2 Khối Than &7(COAL_BLOCK)'
+      - '&aNhận được: &e2 Đèn Lồng + 16 Cây Đuốc'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột trái để đổi ngay!'
+    left_click_requirement:
+      requirements:
+        has_coal:
+          type: has item
+          material: COAL_BLOCK
+          amount: 2
+      deny_commands:
+        - '[message] &c&l[!] &cBạn không có đủ 2 Khối Than trong túi để đổi!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:coal_block 2'
+      - '[console] minecraft:give %player_name% minecraft:lantern 2'
+      - '[console] minecraft:give %player_name% minecraft:torch 16'
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[message] &a&l[TRAO ĐỔI] &fBạn đã dùng &e2 Khối Than &fđổi lấy &eGói Ánh Sáng&f!'
+
+  'ender_pearl':
+    slot: 13
+    material: ENDER_PEARL
+    display_name: '&3&l[4 NGỌC ENDER DỊCH CHUYỂN]'
+    lore:
+      - '&7----------------------------------'
+      - '&fDịch chuyển tức thời thoát hiểm khỏi vực sâu!'
+      - '&7----------------------------------'
+      - '&6Chi phí đổi: &e4 Thỏi Vàng &7(Trong túi)'
+      - '&aNhận được: &34 Viên Ngọc Ender'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột trái để đổi ngay!'
+    left_click_requirement:
+      requirements:
+        has_gold:
+          type: has item
+          material: GOLD_INGOT
+          amount: 4
+      deny_commands:
+        - '[message] &c&l[!] &cBạn không có đủ 4 Thỏi Vàng trong túi để đổi!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:gold_ingot 4'
+      - '[console] minecraft:give %player_name% minecraft:ender_pearl 4'
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[message] &a&l[TRAO ĐỔI] &fBạn đã dùng &e4 Thỏi Vàng &fđổi lấy &34 Ngọc Ender&f!'
+
+  'healing_potion':
+    slot: 14
+    material: POTION
+    display_name: '&c&l[BÌNH THUỐC HỒI MÁU II]'
+    lore:
+      - '&7----------------------------------'
+      - '&fHồi phục 4 tim ngay lập tức.'
+      - '&7----------------------------------'
+      - '&6Chi phí đổi: &e6 Thỏi Vàng &7(Trong túi)'
+      - '&aNhận được: &c1 Bình Thuốc Hồi Máu II'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột trái để đổi ngay!'
+    left_click_requirement:
+      requirements:
+        has_gold:
+          type: has item
+          material: GOLD_INGOT
+          amount: 6
+      deny_commands:
+        - '[message] &c&l[!] &cBạn không có đủ 6 Thỏi Vàng trong túi để đổi!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:gold_ingot 6'
+      - '[console] minecraft:give %player_name% minecraft:potion{Potion:"minecraft:strong_healing"} 1'
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[message] &a&l[TRAO ĐỔI] &fBạn đã dùng &e6 Thỏi Vàng &fđổi lấy &cThuốc Hồi Máu II&f!'
+
+  'totem':
+    slot: 15
+    material: TOTEM_OF_UNDYING
+    display_name: '&e&l[TOTEM TRƯỜNG SINH]'
+    lore:
+      - '&7----------------------------------'
+      - '&fBảo hiểm mạng sống! Hồi sinh ngay khi chết.'
+      - '&7----------------------------------'
+      - '&6Chi phí đổi: &b1 Viên Kim Cương &7(Trong túi)'
+      - '&aNhận được: &e1 Totem Trường Sinh'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột trái để đổi ngay!'
+    left_click_requirement:
+      requirements:
+        has_diamond:
+          type: has item
+          material: DIAMOND
+          amount: 1
+      deny_commands:
+        - '[message] &c&l[!] &cBạn không có đủ 1 Kim Cương trong túi để đổi!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:diamond 1'
+      - '[console] minecraft:give %player_name% minecraft:totem_of_undying 1'
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[message] &a&l[TRAO ĐỔI] &fBạn đã dùng &b1 Kim Cương &fđổi lấy &e1 Totem Trường Sinh&f!'
+
+  'sharpness_book':
+    slot: 16
+    material: ENCHANTED_BOOK
+    display_name: '&d&l[SÁCH SẮC BÉN V (SHARPNESS V)]'
+    lore:
+      - '&7----------------------------------'
+      - '&fGia tăng sát thương cực đại cho vũ khí.'
+      - '&7----------------------------------'
+      - '&6Chi phí đổi: &b2 Viên Kim Cương &7(Trong túi)'
+      - '&aNhận được: &dSách Sắc Bén V'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột trái để đổi ngay!'
+    left_click_requirement:
+      requirements:
+        has_diamond:
+          type: has item
+          material: DIAMOND
+          amount: 2
+      deny_commands:
+        - '[message] &c&l[!] &cBạn không có đủ 2 Kim Cương trong túi để đổi!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:diamond 2'
+      - '[console] minecraft:give %player_name% minecraft:enchanted_book{StoredEnchantments:[{id:"minecraft:sharpness",lvl:5s}]} 1'
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[message] &a&l[TRAO ĐỔI] &fBạn đã dùng &b2 Kim Cương &fđổi lấy &dSách Sắc Bén V&f!'
+
+  'protection_book':
+    slot: 20
+    material: ENCHANTED_BOOK
+    display_name: '&b&l[SÁCH BẢO VỆ IV (PROTECTION IV)]'
+    lore:
+      - '&7----------------------------------'
+      - '&fGiảm tối đa mọi sát thương từ quái vật.'
+      - '&7----------------------------------'
+      - '&6Chi phí đổi: &b2 Viên Kim Cương &7(Trong túi)'
+      - '&aNhận được: &bSách Bảo Vệ IV'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột trái để đổi ngay!'
+    left_click_requirement:
+      requirements:
+        has_diamond:
+          type: has item
+          material: DIAMOND
+          amount: 2
+      deny_commands:
+        - '[message] &c&l[!] &cBạn không có đủ 2 Kim Cương trong túi để đổi!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:diamond 2'
+      - '[console] minecraft:give %player_name% minecraft:enchanted_book{StoredEnchantments:[{id:"minecraft:protection",lvl:4s}]} 1'
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[message] &a&l[TRAO ĐỔI] &fBạn đã dùng &b2 Kim Cương &fđổi lấy &bSách Bảo Vệ IV&f!'
+
+  'netherite_template':
+    slot: 22
+    material: NETHERITE_UPGRADE_SMITHING_TEMPLATE
+    display_name: '&5&l[BẢN MẪU NÂNG CẤP NETHERITE]'
+    lore:
+      - '&7----------------------------------'
+      - '&fDùng trên Bàn Rèn để nâng cấp đồ lên Netherite!'
+      - '&7----------------------------------'
+      - '&6Chi phí đổi: &b4 Viên Kim Cương &7(Trong túi)'
+      - '&aNhận được: &51 Bản Mẫu Smithing Template'
+      - '&7----------------------------------'
+      - '&a➤ Nhấp chuột trái để đổi ngay!'
+    left_click_requirement:
+      requirements:
+        has_diamond:
+          type: has item
+          material: DIAMOND
+          amount: 4
+      deny_commands:
+        - '[message] &c&l[!] &cBạn không có đủ 4 Kim Cương trong túi để đổi!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    left_click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:diamond 4'
+      - '[console] minecraft:give %player_name% minecraft:netherite_upgrade_smithing_template 1'
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[message] &a&l[TRAO ĐỔI] &fBạn đã dùng &b4 Kim Cương &fđổi lấy &5Bản Mẫu Netherite&f!'
+
+  'trade_guide':
+    slot: 24
+    material: CHEST
+    display_name: '&a&l🤝 [ĐỔI ĐỒ TRỰC TIẾP VỚI BẠN BÈ]'
+    lore:
+      - '&7----------------------------------'
+      - '&eMuốn đổi đồ trực tiếp người với người?'
+      - '&a➤ CỰC DỄ DÀNG - KHÔNG CẦN TIỀN XU:'
+      - '&f1. Lại gần người bạn của mình.'
+      - '&f2. &bGiữ phím SHIFT + Nhấp Chuột Phải &fvào bạn đó.'
+      - '&f   (Hoặc gõ: &e/trade <tên_bạn>&f)'
+      - '&f3. Bảng rương chia đôi sẽ hiện ra.'
+      - '&f4. Kéo đồ của mình vào ➔ Cả 2 cùng ấn SẴN SÀNG!'
+      - '&7----------------------------------'
+      - '&a✔ Đồ tự động đổi an toàn 100%!'
+    left_click_commands:
+      - '[message] &a&l[MẸO ĐỔI ĐỒ] &fHãy lại gần bạn bè, &bGiữ phím SHIFT + Nhấp Chuột Phải &fvào người đó để mở bảng đổi đồ nhé!'
+      - '[close]'
+
+  'back_btn':
+    slot: 31
+    material: ARROW
+    display_name: '&e&l« QUAY LẠI MENU CHÍNH'
+    lore:
+      - '&7Nhấp để quay lại Menu Tổng.'
+    left_click_commands:
+      - '[openguimenu] main_menu'

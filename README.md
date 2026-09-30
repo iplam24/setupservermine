@@ -32,6 +32,9 @@ Khi clone hoặc copy thư mục này sang bất kỳ máy tính/laptop/VPS nào
    * Cập nhật địa chỉ UDP của Playit vào file `config/voicechat/voicechat-server.properties` tại dòng `voice_host=`.
 3. Gửi địa chỉ Playit cho bạn bè cùng vào chơi!
 
+> 🐧 **Bạn muốn deploy lên Ubuntu / Linux VPS (User Root)?**
+> Hãy xem hướng dẫn chi tiết tại file [DEPLOY_UBUNTU.md](DEPLOY_UBUNTU.md).
+
 ---
 
 ## 🌐 Trung Tâm Quản Trị & Tối Ưu Web (`http://localhost:7868`)

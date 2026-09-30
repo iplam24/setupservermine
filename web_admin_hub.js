@@ -119,6 +119,14 @@ setInterval(async () => {
     }
 }, 1000);
 
+// Auto-Save every 3 minutes to prevent rollback on sudden crash
+setInterval(async () => {
+    try {
+        await sendRcon('save-all');
+        console.log('[AutoSave] World and player data saved to disk.');
+    } catch (e) {}
+}, 3 * 60 * 1000);
+
 // Daily Maintenance Check
 let lastRestartDate = '';
 setInterval(async () => {
@@ -260,7 +268,35 @@ const server = http.createServer(async (req, res) => {
                     await sendRcon('save-all');
                     await sendRcon('stop');
                 }, 10000);
-                msg = 'Đã gửi lệnh đếm ngược khởi động lại (10 giây)!';
+            } else if (action === 'grant_tag') {
+                let reqBody = '';
+                await new Promise(r => {
+                    req.on('data', c => reqBody += c);
+                    req.on('end', r);
+                });
+                let parsed = {};
+                try {
+                    parsed = JSON.parse(reqBody);
+                } catch (e) {
+                    const matchP = reqBody.match(/player["']?\s*:\s*["']?([^"',}\s]+)/i);
+                    const matchT = reqBody.match(/tag["']?\s*:\s*["']?([^"',}\s]+)/i);
+                    parsed = { player: matchP ? matchP[1] : '', tag: matchT ? matchT[1] : '' };
+                }
+                const { player, tag } = parsed;
+                if (!player) throw new Error('Vui lòng nhập tên người chơi!');
+
+                const allTags = ['gaychua', 'xuongsuon', 'giobay', 'nghiennang', 'ta40kg', 'quetam', 'khangkhiu', 'dabocxuong'];
+                for (const t of allTags) {
+                    await sendRcon(`luckperms:lp user ${player} parent remove ${t}`).catch(() => {});
+                }
+
+                if (tag && tag !== 'clear') {
+                    await sendRcon(`luckperms:lp user ${player} parent add ${tag}`).catch(() => {});
+                    await sendRcon(`broadcast §8[§6§lDANH HIỆU§8] §eQuản trị viên vừa trao danh hiệu cho §b${player}§e!`).catch(() => {});
+                    msg = `Đã cấp danh hiệu cho ${player} thành công!`;
+                } else {
+                    msg = `Đã gỡ bỏ toàn bộ danh hiệu của ${player}!`;
+                }
             }
 
             res.writeHead(200, { 'Content-Type': 'application/json' });
@@ -373,7 +409,7 @@ function getHtml() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trùm Minecraft • Trung Tâm Quản Trị & Tối Ưu</title>
+    <title>Server Của Những Người Gầy • Admin Control Hub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
@@ -706,8 +742,8 @@ function getHtml() {
     <div class="container">
         <header>
             <div class="logo-box">
-                <h1>⚡ TRÙM MINECRAFT • ADMIN CONTROL HUB</h1>
-                <p>Tự động bảo trì • Dọn rác giảm tải • Tối ưu CPU/RAM • Quản lý Mod & Plugin</p>
+                <h1>🦴 SERVER CỦA NHỮNG NGƯỜI GẦY • ADMIN HUB</h1>
+                <p>Gầy nhưng đầy nghị lực • Tự động dọn rác • Tối ưu CPU/RAM • Chống gió thổi bay server</p>
             </div>
             <div class="header-links">
                 <button class="btn-link" onclick="switchTab('voxeldash')" style="cursor:pointer;">
@@ -761,6 +797,7 @@ function getHtml() {
             <button class="nav-btn" id="tabBtn-clearlag" onclick="switchTab('clearlag')">🧹 Dọn Rác & Giảm Tải</button>
             <button class="nav-btn" id="tabBtn-perf" onclick="switchTab('perf')">🚀 Tối Ưu Hiệu Năng</button>
             <button class="nav-btn" id="tabBtn-mods" onclick="switchTab('mods')">🧩 Kéo Thả Mod / Plugin</button>
+            <button class="nav-btn" id="tabBtn-tags" onclick="switchTab('tags')">👑 Cấp Danh Hiệu</button>
             <button class="nav-btn" id="tabBtn-voxeldash" onclick="switchTab('voxeldash')">📊 Giám Sát VoxelDash (Live)</button>
         </div>
 
@@ -939,6 +976,41 @@ function getHtml() {
                 <iframe id="voxeldashFrame" src="" style="width:100%; height:780px; border:1px solid var(--border); border-radius:10px; background:#0d0b0f;" allowfullscreen></iframe>
             </div>
         </div>
+
+        <!-- TAB 6: TAGS & TITLES -->
+        <div class="tab-panel" id="tab-tags">
+            <div class="section-card">
+                <div class="section-title">👑 Cấp Danh Hiệu Cho Người Chơi (Không Cần Gõ Lệnh)</div>
+                <div class="section-desc">Chọn danh hiệu và nhập tên người chơi để trao danh hiệu ngay lập tức. Danh hiệu sẽ hiển thị chữ bay nổi trên đầu trong game (3D nametag), hiển thị trong khung chat và danh sách phím TAB!</div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="display:block; font-size:13px; font-weight:600; margin-bottom:8px; color:var(--text-main);">Tên Người Chơi:</label>
+                    <input type="text" id="targetPlayerName" class="input-box" style="width: 100%; max-width: 380px; text-align: left; font-size: 15px;" placeholder="Ví dụ: XuanLam, Steve...">
+                </div>
+
+                <label style="display:block; font-size:13px; font-weight:600; margin-bottom:12px; color:var(--text-main);">Chọn Danh Hiệu Muốn Cấp:</label>
+                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 24px;">
+                    <button class="action-btn" type="button" style="border-color:#ffab00; color:#ffab00;" onclick="selectTag('gaychua', '👑 [Gầy Chúa]')">👑 [Gầy Chúa]</button>
+                    <button class="action-btn" type="button" style="border-color:#ffffff; color:#ffffff;" onclick="selectTag('xuongsuon', '🦴 [Xương Sườn]')">🦴 [Xương Sườn]</button>
+                    <button class="action-btn" type="button" style="border-color:#00d2ff; color:#00d2ff;" onclick="selectTag('giobay', '💨 [Gió Bay]')">💨 [Gió Bay]</button>
+                    <button class="action-btn" type="button" style="border-color:#ffab00; color:#ffab00;" onclick="selectTag('nghiennang', '💊 [Nghiện Nặng]')">💊 [Nghiện Nặng]</button>
+                    <button class="action-btn" type="button" style="border-color:#00e676; color:#00e676;" onclick="selectTag('ta40kg', '🏋️ [Tạ 40kg]')">🏋️ [Tạ 40kg]</button>
+                    <button class="action-btn" type="button" style="border-color:#ffd600; color:#ffd600;" onclick="selectTag('quetam', '🥢 [Que Tăm]')">🥢 [Que Tăm]</button>
+                    <button class="action-btn" type="button" style="border-color:#e040fb; color:#e040fb;" onclick="selectTag('khangkhiu', '🌾 [Khẳng Khiu]')">🌾 [Khẳng Khiu]</button>
+                    <button class="action-btn" type="button" style="border-color:#90a4ae; color:#90a4ae;" onclick="selectTag('dabocxuong', '💀 [Da Bọc Xương]')">💀 [Da Bọc Xương]</button>
+                    <button class="action-btn maint" type="button" onclick="selectTag('clear', '❌ Gỡ Danh Hiệu')">❌ Gỡ Danh Hiệu</button>
+                </div>
+
+                <div style="padding: 16px; background: var(--bg-hover); border-radius: 8px; border: 1px solid var(--border); margin-bottom: 20px;">
+                    <span style="font-size: 13px; color: var(--text-muted);">Đang chọn danh hiệu:</span>
+                    <span id="selectedTagDisplay" style="font-weight: 700; font-size: 15px; margin-left: 10px; color: var(--accent-cyan);">Chưa chọn</span>
+                </div>
+
+                <button class="save-btn" style="width: auto; padding: 12px 28px;" onclick="executeGrantTag()">
+                    🚀 Trao Danh Hiệu Ngay
+                </button>
+            </div>
+        </div>
     </div>
 
     <div class="toast" id="toast">Thông báo</div>
@@ -955,6 +1027,48 @@ function getHtml() {
             toast.style.color = isError ? '#ff5252' : '#00e676';
             toast.style.display = 'block';
             setTimeout(() => { toast.style.display = 'none'; }, 3500);
+        }
+
+        let currentSelectedTag = '';
+
+        function selectTag(tagId, tagName) {
+            currentSelectedTag = tagId;
+            const el = document.getElementById('selectedTagDisplay');
+            el.innerText = tagName;
+            if (tagId === 'clear') {
+                el.style.color = 'var(--accent-red)';
+            } else {
+                el.style.color = 'var(--accent-green)';
+            }
+        }
+
+        async function executeGrantTag() {
+            const player = document.getElementById('targetPlayerName').value.trim();
+            if (!player) {
+                showToast('⚠️ Vui lòng nhập tên người chơi!', true);
+                return;
+            }
+            if (!currentSelectedTag) {
+                showToast('⚠️ Vui lòng nhấp chọn 1 danh hiệu ở trên!', true);
+                return;
+            }
+
+            try {
+                showToast('⏳ Đang xử lý cấp danh hiệu...');
+                const res = await fetch('/api/action/grant_tag', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ player, tag: currentSelectedTag })
+                });
+                const data = await res.json();
+                if (data.success) {
+                    showToast('🎉 ' + data.message);
+                } else {
+                    showToast('❌ ' + (data.error || 'Lỗi cấp danh hiệu'), true);
+                }
+            } catch (err) {
+                showToast('❌ Lỗi kết nối: ' + err.message, true);
+            }
         }
 
         function switchTab(tab) {

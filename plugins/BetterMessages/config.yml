@@ -5,7 +5,7 @@ check-for-updates: false
 bungeecord-mode: false
 
 internal-messages:
-  prefix: "[&c&lTRÙM MINECRAFT&r] "
+  prefix: "[&c&lSERVER NGƯỜI GẦY&r] "
   help-redirect: "&bType \"/bm help\" for help"
   reloaded: "&aConfig đã được nạp lại thành công!"
   help: "&bCommands\n- /bettermessages help: Trợ giúp\n- /bettermessages reload: Nạp lại cấu hình"
@@ -21,7 +21,7 @@ messages:
     permission: false
     message-type: title
     message:
-      - "&c&l⚡ &6&lTRÙM MINECRAFT &c&l⚡[SUBTITLE]&eChào mừng &b&l{player} &eđến với máy chủ![FADEIN-10][STAY-60][FADEOUT-10]"
+      - "&c&l⚡ &6&lSERVER NGƯỜI GẦY &c&l⚡[SUBTITLE]&eChào que tăm &b&l{player} &eđã hạ cánh an toàn![FADEIN-10][STAY-60][FADEOUT-10]"
     audience: user
     activation:
       - join
@@ -37,14 +37,14 @@ messages:
     permission: false
     message-type: actionbar
     message:
-      - "&e⚔ Chúc bạn chơi vui vẻ! &f• &aGõ &b/rules &ađể đọc nội quy server &e⚔"
+      - "&c⚠ Cảnh báo gió cấp 12 &f• &aGõ &b/danhhieu &ađể chọn danh hiệu cho ngực lép &c⚠"
     audience: user
     activation:
       - join
     storage-type: default
     delay: 20
 
-  # 3. Thông báo chung trong khung chat cho toàn bộ server
+  # 3. Thông báo chung trong khung chat cho toàn bộ server khi vào game
   join:
     enabled: true
     priority: -1
@@ -53,7 +53,9 @@ messages:
     permission: false
     message-type: chat
     message:
-      - "&a&l[+] &eNgười chơi &b&l{player} &eđã kết nối vào máy chủ!"
+      - "&a&l[+] &e{player} &6đã bị gió thổi bay vào server!"
+      - "&a&l[+] &e{player} &6vừa lảo đảo bước vào vì gió giật cấp 12!"
+      - "&a&l[+] &e{player} &6vừa bay qua nóc nhà đáp xuống làng Gầy!"
     audience: server
     activation:
       - join
@@ -69,7 +71,7 @@ messages:
     permission: false
     message-type: chat
     message:
-      - "&d&l★ &eChào mừng người chơi mới &b&l{player} &elần đầu tiên gia nhập &c&lTRÙM MINECRAFT&e! &d&l★"
+      - "&d&l★ &eChào mừng que tăm mới &b&l{player} &elần đầu tiên bị bão cuốn vào &c&lSERVER NGƯỜI GẦY&e! &d&l★"
     audience: server
     activation:
       - join
@@ -84,7 +86,9 @@ messages:
     message-type: chat
     permission: false
     message:
-      - "&c&l[-] &7Người chơi &f{player} &7đã rời khỏi máy chủ."
+      - "&c&l[-] &e{player} &7gầy quá không bám trụ nổi nên đã bay màu!"
+      - "&c&l[-] &e{player} &7vừa bị một cơn gió nhẹ cuốn đi mất xác!"
+      - "&c&l[-] &e{player} &7đã tan biến vì không chịu nổi sức ép không khí!"
     audience: server
     activation:
       - quit

@@ -1,0 +1,227 @@
+# ==============================================================================
+# 🎯 CUSTOM DEATH MESSAGES - CONFIG CHO SERVER NGƯỜI GẦY (MEME & HÀI HƯỚC)
+# ==============================================================================
+
+epic-messages:
+  - "&6&l[SIÊU BAY MÀU] &e{victim} &6đã bị &e{killer_name} &6búng một phát bay thẳng vào dải ngân hà!"
+  - "&c&l[THẢM HỌA KHẮNG KHIU] &4{victim} &cđã tan thành mây khói dưới tay &4{killer_name}&c!"
+
+epic-effects:
+  sound: "entity.lightning_bolt.thunder"
+  particle: "EXPLOSION_EMITTER"
+  particle-count: 50
+  title: "&6&lBAY XÁC CỰC MẠNH!"
+  subtitle: "&e{victim} đã hy sinh bộ hài cốt!"
+
+conditional-messages:
+  default:
+    messages:
+      FALL:
+        - condition: "{distance} > 20"
+          message: "&c☠ &e{victim} &7rơi tự do từ tầng mây, cặp giò khẳng khiu gãy vụn!"
+        - default: "&c☠ &e{victim} &7bước hụt chân xuống hố vì cặp giò khẳng khiu!"
+
+system-messages:
+  plugin-enabled: "&a[CustomDeathMessages] Đã kích hoạt hệ thống thông báo chết Người Gầy!"
+  plugin-disabled: "&c[CustomDeathMessages] Đã tắt thông báo chết."
+  reload-success: "&a[CustomDeathMessages] Cấu hình thông báo chết đã nạp lại thành công!"
+  reload-failure: "&c[CustomDeathMessages] Lỗi nạp cấu hình: {error}"
+  no-permission-reload: "&cBạn không có quyền reload."
+  no-permission-test: "&cBạn không có quyền test."
+  no-permission-bypass: "&cBạn không thể bỏ qua thông báo."
+  players-only: "&cChỉ người chơi mới dùng được lệnh này."
+  usage-test: "&cDùng: /cdm test <cause> [killer]"
+  specify-cause: "&cChọn nguyên nhân: FALL, FIRE, ENTITY_ATTACK, DROWNING, STARVATION..."
+  invalid-cause: "&cNguyên nhân không hợp lệ: {causes}"
+  test-message-prefix: "&a[Test] &f"
+  test-error: "&cLỗi: {error}"
+  no-permission-test-others: "&cKhông có quyền test trên người khác."
+  test-summary-title: "&6=== Test Thông Báo Chết ==="
+  test-summary-victim: "&bNạn nhân: &f{victim}"
+  test-summary-killer: "&bKẻ ra tay: &f{killer}"
+  test-summary-source: "&bNguồn: &f{source}"
+  test-summary-cause: "&bNguyên nhân: &f{cause}"
+  test-summary-broadcast: "&bPhát loa: &f{broadcast}"
+  test-summary-epic: "&bEpic: &f{epic}"
+  test-summary-message: "&bNội dung:"
+  test-summary-sound: "&bÂm thanh: &f{sound}"
+  test-summary-particle: "&bHiệu ứng hạt: &f{particle}"
+  test-summary-cost: "&bChi phí: &f{cost}"
+  test-summary-separator: "&6======================================="
+  no-permission-config: "&cKhông có quyền."
+  usage-config: "&cDùng: /cdm config validate"
+  unknown-subcommand: "&cLệnh không tồn tại."
+  general-help-title: "&6CustomDeathMessages v{version}"
+  general-help-test: "&b/cdm test &7- Test thông báo chết"
+  general-help-broadcast: "&b/cdm broadcast &7- Test phát loa"
+  general-help-help: "&b/cdm help &7- Xem trợ giúp"
+  general-help-reload: "&b/cdm reload &7- Nạp lại config"
+  general-help-config: "&b/cdm config validate &7- Kiểm tra config"
+  reload-starting: "&eĐang nạp lại cấu hình..."
+  reload-load-failed: "&cLỗi nạp cấu hình."
+  reload-validation-failed: "&cKiểm tra cấu hình thất bại."
+  reload-with-warnings: "&eNạp lại cấu hình với cảnh báo."
+  config-invalid-sound: "&cÂm thanh không hợp lệ."
+  config-invalid-particle: "&cHiệu ứng hạt không hợp lệ."
+  config-invalid-darken-particle: "&cHiệu ứng tối màn hình không hợp lệ."
+  message-not-found: "&cKhông tìm thấy tin nhắn phù hợp."
+  papi-error: "&cPlaceholderAPI lỗi."
+  economy-cost-message: "&cTrừ ${cost} khi chết."
+  economy-insufficient-funds: "&cKhông đủ tiền."
+  economy-exempt-message: "&7(Miễn phí)"
+  config-validator-title: "✅ Kiểm tra cấu hình:"
+  config-validator-success-all: "✅ Tất cả cấu hình chuẩn!"
+  config-validator-summary-prefix: "ℹ️ Cấu hình hiện tại: "
+  config-validator-error-count: "❌ Tìm thấy {error_count} lỗi."
+  config-validator-sound-found: "✅ Âm thanh hợp lệ."
+  config-validator-particle-found: "✅ Hiệu ứng hạt hợp lệ."
+  config-validator-sound-not-found: "❌ Âm thanh không tồn tại."
+  config-validator-particle-not-found: "❌ Hiệu ứng hạt không tồn tại."
+  config-validator-condition-syntax-warning: "⚠️ Cảnh báo điều kiện."
+  config-validator-condition-placeholder-warning: "⚠️ Cảnh báo placeholder."
+  config-validator-summary-message-to-world: "Gửi tin nhắn vào world. "
+  config-validator-summary-message-to-radius: "Bán kính: {radius} ô. "
+  config-validator-summary-sound-enabled: "Bật âm thanh. "
+  config-validator-summary-sound-disabled: "Tắt âm thanh. "
+  config-validator-summary-particles-enabled: "Bật hạt. "
+  config-validator-summary-particles-disabled: "Tắt hạt. "
+  broadcast-no-permission: "&cKhông có quyền phát loa."
+  broadcast-player-only: "&cChỉ người chơi."
+  broadcast-usage-sound: "&cDùng: /cdm broadcast sound"
+  broadcast-usage-sound-example: "&7VD: /cdm broadcast sound GLOBAL entity.player.death"
+  broadcast-usage-particle: "&cDùng: /cdm broadcast particle"
+  broadcast-usage-particle-example: "&7VD: /cdm broadcast particle GLOBAL EXPLOSION"
+  broadcast-usage-message: "&cDùng: /cdm broadcast message"
+  broadcast-invalid-mode: "&cChế độ không hợp lệ."
+  broadcast-success-sound: "&a✓ Đã phát âm thanh."
+  broadcast-success-particle: "&a✓ Đã tạo hạt."
+  broadcast-success-message: "&a✓ Đã gửi tin nhắn."
+  broadcast-usage-global: "&cDùng: /cdm broadcast global"
+  broadcast-usage-global-message: "&cDùng: /cdm broadcast global message"
+  broadcast-success-global-sound: "&a✓ Đã phát âm thanh toàn server!"
+  broadcast-success-global-message: "&a✓ Đã phát tin nhắn toàn server!"
+  broadcast-success-global-particle: "&a✓ Đã tạo hạt toàn server!"
+  broadcast-invalid-type: "&cLoại không hợp lệ."
+  broadcast-modes-title: "&6=== Chế độ phát loa ==="
+  broadcast-mode-global: "&bGLOBAL &7- Toàn bộ máy chủ"
+  broadcast-mode-world: "&bWORLD &7- Cùng thế giới"
+  broadcast-mode-radius: "&bRADIUS &7- Trong phạm vi bán kính"
+  broadcast-mode-victim: "&bVICTIM_ONLY &7- Chỉ người chết"
+  broadcast-current-settings: "&6Cài đặt hiện tại:"
+  broadcast-current-sound: "&bÂm thanh: &f{mode}"
+  broadcast-current-particle: "&bHạt: &f{mode}"
+  broadcast-help-title: "&6=== Trợ giúp phát loa ==="
+  broadcast-help-sound: "&b/cdm broadcast sound"
+  broadcast-help-particle: "&b/cdm broadcast particle"
+  broadcast-help-message: "&b/cdm broadcast message"
+  broadcast-help-test: "&b/cdm broadcast test"
+  broadcast-help-modes: "&b/cdm broadcast modes"
+  broadcast-help-global: "&b/cdm broadcast global"
+  broadcast-modes-list: "&7Chế độ: GLOBAL, WORLD, RADIUS, VICTIM"
+  broadcast-permission-info: "&7Quyền: cdm.broadcast"
+  broadcast-radius-suffix: " (bán kính: {radius} ô)"
+  help-detail-description: "&7Mô tả: &f{desc}"
+  help-detail-usage: "&7Cách dùng: &f{usage}"
+  help-detail-permission: "&7Quyền hạn: &f{permission}"
+  help-command-line: "&a{command} &8- &7{description}"
+
+help-system:
+  general-header: "&6&l=== Trợ Giúp CustomDeathMessages ==="
+  general-description: "&eThông báo chết bựa cho Server Người Gầy."
+  general-usage: "&7Gõ &f/cdm help <command>&7 để xem chi tiết."
+  commands:
+    test-desc: "Thử nghiệm thông báo chết."
+    reload-desc: "Nạp lại cấu hình."
+    config-validate-desc: "Kiểm tra cấu hình."
+    help-desc: "Hiện trợ giúp."
+  command-details:
+    test:
+      title: "&6&lLệnh: /cdm test"
+      description: "Thử nghiệm giả lập chết."
+      usage: "/cdm test <cause> [killer]"
+      permission: "cdm.test"
+    reload:
+      title: "&6&lLệnh: /cdm reload"
+      description: "Nạp lại toàn bộ file."
+      usage: "/cdm reload"
+      permission: "cdm.reload"
+    "config validate":
+      title: "&6&lLệnh: /cdm config validate"
+      description: "Kiểm tra lỗi config."
+      usage: "/cdm config validate"
+      permission: "cdm.reload"
+    help:
+      title: "&6&lLệnh: /cdm help"
+      description: "Hiện hướng dẫn."
+      usage: "/cdm help [command]"
+      permission: "cdm.use"
+  unknown-command: "&cLệnh '&f{command}&c' không tồn tại."
+
+# ==============================================================================
+# 👥 CÁC THÔNG BÁO CHẾT SIÊU BỰA ĐẶC SẢN NGƯỜI GẦY
+# ==============================================================================
+groups:
+  default:
+    default-messages:
+      - "&c☠ &e{victim} &7gầy quá không chịu nổi nhiệt nên đã bay màu!"
+      - "&c☠ &e{victim} &7kiệt sức vì thân hình que tăm chỉ còn da bọc xương!"
+      - "&c☠ &e{victim} &7đã tan biến thành làn khói mỏng vì quá nhẹ cân!"
+    cause-messages:
+      FALL:
+        - "&c☠ &e{victim} &7bước hụt chân xuống hố vì cặp giò khẳng khiu!"
+        - "&c☠ &e{victim} &7tiếp đất bằng mông do gió thổi mất thăng bằng!"
+        - "&c☠ &e{victim} &7quên mất là người gầy rơi từ trên cao xuống cũng vỡ xương!"
+      ENTITY_ATTACK:
+        - "&c☠ &e{victim} &7bị &c{killer_name} &7thổi nhẹ một cái là ngã gục!"
+        - "&c☠ &e{victim} &7trơ xương không đỡ nổi một đòn từ &c{killer_name}&7!"
+        - "&c☠ &c{killer_name} &7đã bẻ gãy bộ hài cốt còi cọc của &e{victim}&7!"
+      PROJECTILE:
+        - "&c☠ &e{victim} &7bị &c{killer_name} &7bắn xuyên qua hai khe xương sườn!"
+        - "&c☠ &e{victim} &7đã khẳng khiu còn bị &c{killer_name} &7tia trúng tim!"
+      DROWNING:
+        - "&c☠ &e{victim} &7gầy trơ xương chìm nghỉm không ngoi lên nổi!"
+        - "&c☠ &e{victim} &7không đủ mỡ để nổi trên mặt nước nên uống no nước rồi chìm!"
+      STARVATION:
+        - "&c☠ &e{victim} &7đã gầy như que tăm còn nhịn ăn nên quy tiên!"
+        - "&c☠ &e{victim} &7quên ăn cơm 3 bữa một ngày, da bọc xương quy tiên!"
+      LAVA:
+        - "&c☠ &e{victim} &7bị nhúng vào dung nham, giòn tan như tóp mỡ!"
+        - "&c☠ &e{victim} &7gầy quá nên tan chảy trong dung nham chỉ trong một nốt nhạc!"
+      FIRE:
+        - "&c☠ &e{victim} &7bốc hỏa cháy như que củi khô!"
+      FIRE_TICK:
+        - "&c☠ &e{victim} &7người toàn củi khô nên bén lửa thiêu rụi!"
+      BLOCK_EXPLOSION:
+        - "&c☠ &e{victim} &7bị nổ bay mất xác, xương sườn văng tứ tung!"
+      ENTITY_EXPLOSION:
+        - "&c☠ &e{victim} &7bị Creeper cho nổ tung, que tăm gãy làm đôi!"
+      VOID:
+        - "&c☠ &e{victim} &7bị gió thổi bay thẳng xuống Hư Vô không lối thoát!"
+      SUFFOCATION:
+        - "&c☠ &e{victim} &7ngực lép quá không hít thở nổi nên ngạt thở trong tường!"
+      LIGHTNING:
+        - "&c☠ &e{victim} &7bị sét đánh trúng cột thu lôi di động khẳng khiu!"
+      MAGIC:
+        - "&c☠ &e{victim} &7đã ốm yếu còn dính ma thuật độc hại nên tắt thở!"
+      POISON:
+        - "&c☠ &e{victim} &7đã xanh xao còn trúng độc xanh cỏ luôn!"
+      WITHER:
+        - "&c☠ &e{victim} &7bị Wither rút cạn chút sinh lực còi cọc cuối cùng!"
+      CONTACT:
+        - "&c☠ &e{victim} &7ôm xương rồng bị gai đâm thủng da bọc xương!"
+      CRAMMING:
+        - "&c☠ &e{victim} &7bị đám đông chèn ép bẹp dúm như tờ giấy A4!"
+      DRAGON_BREATH:
+        - "&c☠ &e{victim} &7bị Rồng Ender hắt hơi một cái là bốc hơi!"
+      FLY_INTO_WALL:
+        - "&c☠ &e{victim} &7bay lượn như cánh diều đứt dây tông thẳng vào vách núi!"
+      HOT_FLOOR:
+        - "&c☠ &e{victim} &7bước lên khối magma bị bỏng cặp chân khẳng khiu!"
+      FREEZE:
+        - "&c☠ &e{victim} &7không có tí mỡ nào chống rét nên đông cứng như que kem!"
+      SONIC_BOOM:
+        - "&c☠ &e{victim} &7bị sóng âm Warden thổi bay cả người lẫn xương cốt!"
+
+update-notifications:
+  log: "&a[CustomDeathMessages] Đã kích hoạt bản mới nhất."
+  player: ""

@@ -1,0 +1,15 @@
+[Unit]
+Description=ITCOM Minecraft Web Admin Hub (Port 7868)
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/ITCOMSERVER
+
+ExecStart=/usr/bin/node web_admin_hub.js
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
