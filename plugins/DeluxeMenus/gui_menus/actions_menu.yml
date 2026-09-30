@@ -131,7 +131,11 @@ items:
       - '&7----------------------------------'
       - '&c➤ Nhấp để đứng dậy!'
     left_click_commands:
-      - '[player] gsit'
+      - '[player] sit'
+      - '[player] lay'
+      - '[player] spin'
+      - '[player] crawl'
+      - '[player] bellyflop'
       - '[close]'
 
   'back':

@@ -10,19 +10,19 @@ Options:
   check-for-update: true
 
   # Force players to stand up after taking damage
-  get-up-damage: false
+  get-up-damage: true
 
   # Allow standing up by sneaking
   get-up-sneak: true
 
   # Return players to their original position upon standing up
-  get-up-return: false
+  get-up-return: true
 
   # Force players to stand up when the block beneath breaks
   get-up-break: true
 
   # Allow sitting or posing in unsafe locations
-  allow-unsafe: false
+  allow-unsafe: true
 
   # Allow only one player per block to sit or pose
   same-block-rest: false
@@ -72,7 +72,7 @@ Options:
     sneak-ejects: true
 
     # Place the player at the bottom of the stack upon dismounting
-    bottom-return: false
+    bottom-return: true
 
     # Require an empty main hand to sit on other players
     empty-hand-only: true
